@@ -1,0 +1,79 @@
+You can also make a new .cfm file and use it as a function library. You
+can then use the cfinclude tag to include it on any pages that might
+need it.
+
+cfinclude only has one attribute, template, that takes the path to the
+function library file. If the function is placed in a file called
+greetingCustomizer.cfm, to give our page access to the function we just
+include our greeting customizer on the page like so:
+
+~~~~ {.prettyprint}
+<cfinclude template="path/to/libraries/greetingCustomizer.cfm" />
+~~~~
+
+The rest of the page remains unchanged. What it actually does is treat
+the code that is in the included file as if it were on the page itself.
+Doing so grants the included template access to all of the variables on
+the including page. On the surface, it might seem like a good idea, but
+we will get into why it can actually make code very messy in a little
+while. In the meantime, once we've included greetingCustomizer.cfm on
+our page, it will look like this:
+
+~~~~ {.prettyprint}
+<cfinclude template="path/to/libraries/greetingCustomizer.cfm" />
+
+<cfset fullName = getFullName(firstName="Emily", lastName="Christiansen") />
+
+<cfoutput>
+    Hello, #fullName#!
+</cfoutput>
+~~~~
+
+While cfinclude is an extremely simple approach, it does have some
+drawbacks. As mentioned above, the included file now has access to every
+variable on the including page, creating the possibility of introducing
+unnecessary dependencies between the two files. For example, with
+cfinclude, declaring arguments isn't really necessary with the function
+if the values already exist on the page, and less experienced developers
+might be tempted to leave them out altogether.
+
+displayPage.cfm:
+
+~~~~ {.prettyprint}
+<cfset firstName = "Emily" />
+<cfset lastName = "Christiansen" />
+
+<cfinclude template="path/to/libraries/greetingCustomizer.cfm" />
+
+<cfset fullName = getFullName() />
+
+<cfoutput>
+    Hello, #fullName#!
+</cfoutput>
+~~~~
+
+greetingCustomizer.cfm:
+
+~~~~ {.prettyprint}
+<cffunction name="getFullName" output="false" access="public" returnType="string">
+
+    <cfset var fullName = firstName & " " & lastName />
+
+    <cfreturn fullName />
+</cffunction>
+~~~~
+
+Remember that cfinclude embeds the CFML code in greetingCustomizer.cfm
+into displayPage.cfm, so writing our code this way is perfectly valid.
+Unfortunately, it opens the door to a lot of confusion. A developer
+looking at the function by itself has no idea where the firstName and
+lastName variables came from. If this function is used anywhere else,
+those variables will need to be declared on the page or passed into the
+function. What was done in the example above introduced a dependency;
+our function no longer stands on its own as an encapsulated block of
+code. Instead, it can only work in the context of the including page,
+and the benefits of code reuse are lost. It is very important, then, to
+make sure that we follow the first example, in which arguments are
+declared and use the arguments scope to communicate what the function
+need to our fellow developers.
+

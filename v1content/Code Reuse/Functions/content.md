@@ -1,0 +1,241 @@
+One acronym that is thrown around in programming circles is DRY: Don't
+Repeat Yourself. Does anyone enjoy reading a repetitive book? Listening
+to the same five songs on the radio station? How about writing the same
+piece of code, over and over again? Performing the same task over and
+over again is mind-numbing and soul-crushing work. When working in a
+large system, it's much more fun to write a piece of code in such a way
+that it can be used multiple times.
+
+Now that some of the basics of programming with ColdFusion have been
+covered, we can take a moment to discuss code reuse. Writing code that
+can be used again is an important skill for developers to master; not
+only does it save time, but it forces the developer to structure their
+code such that individual routines are isolated and labelled properly.
+Doing this makes the code easier to read and interpret. In this chapter,
+simple examples will be used; you can extrapolate from these examples
+and imagine the effects on a larger scale.
+
+Let's pretend I have a ColdFusion page. The function of this page is to
+display a greeting. The code would look something like this:
+
+~~~~ {.prettyprint}
+<cfparam name = "firstName" default = "Emily" />
+<cfparam name = "lastName" default = "Christiansen" />
+
+<cfset fullName = firstName & " " & lastName />
+
+<cfoutput>
+    Hello, #fullName#!
+</cfoutput>
+~~~~
+
+This code doesn't do much; it takes the first name and last name,
+concatenates them to make the full name, then outputs it to the screen.
+What if we wanted to isolate that piece of code that makes the full name
+and use it over and over again throughout the system? ColdFusion offers
+several ways to structure your code for reuse. As the language has grown
+and evolved over the years, it has gone from simple inclusion of files,
+to making individual functions, and finally embracing object-oriented
+programming principles. It also offers the ability to create your own
+custom tags. When discussing code reuse, functions are the simplest
+place to start.
+
+Functions
+---------
+
+Functions are reusable blocks of code that have a name, may take in
+arguments, perform some operations on those arguments, and may return a
+new value. Breaking complex tasks into smaller, clearly labelled
+functions will also make them easier to read and comprehend. Functions
+can be thought of as building blocks for a program.
+
+In ColdFusion, functions are created using the cffunction tag. A simple
+function stub would look like this:
+
+~~~~ {.prettyprint}
+<cffunction name="myFunction" output="false" access="public" returnType="void">
+</cffunction>
+~~~~
+
+Obviously, this function does nothing right now. Before moving on let's
+take a moment and go through the tag's attributes.
+
+-   **name**: The name of the function. This should be short, but as
+    descriptive as possible.
+-   **output**: In some cases, you may want your function to be
+    processed as if it were in a tag, which would display any whitespace
+    and output. If so, set this attribute to true. Most functions are
+    used for processing, not display, so you'll probably want to use
+    false most of the time.
+-   **access**: This controls who can see your function. If it's public,
+    it can be called from anywhere else in the system. If it is private,
+    only functions within the same component can call the function.
+    Package visibility is similar to private, but allows components that
+    are within the same package to use those functions. Remote grants
+    web services the ability to call that function. Components will be
+    discussed later in the chapter.
+-   **returntype**: This describes what type of value is returned. If
+    the function returns nothing, this is set to void.
+
+Now that the stub of the function is created, it's time to make it do
+something. Let's say we have the name of a person stored in our
+database. We want to display the person's first and last name in the
+interface, but their name is stored in two different fields,
+first\_name, and last\_name.
+
+If we already have the first and last names stored in variables, we can
+pass them into the function as an argument. We can tell our function
+which arguments to expect by using the cfargument tag.
+
+For example, the first name would look like this:
+
+~~~~ {.prettyprint}
+<cfargument name="firstName" type="string" required="false" default="" />
+~~~~
+
+As you can see, the tag takes several attributes of its own.
+
+-   **name**: Clear and concise name of your arguments.
+-   **type**: Denotes the type for the argument. In our example above,
+    it is a string.
+-   **required**: Denotes whether or not the argument is required. If
+    you set this to false, make sure you perform checks to ensure that
+    it exists before using it!
+-   **default**: If the argument is not required and not passed in, this
+    value will be used. This eliminates the problem of using an argument
+    that doesn't exist. It will not be used if the argument is required.
+
+The function stub now looks like the example below once we add the
+arguments:
+
+~~~~ {.prettyprint}
+<cffunction name="getFullName" output="false" access="public" returnType="void">
+     <cfargument name="firstName" type="string" required="false" default="" />
+     <cfargument name="lastName" type="string" required="false" default="" />
+
+</cffunction>
+~~~~
+
+Take note that the name of the function was changed. The name is much
+more descriptive of what it actually does; this is an example of
+refactoring, the process of refining code.
+
+If we want to access the firstName and lastName variables, we will need
+to look in the arguments scope. This is one of the many scopes provided
+by ColdFusion. Variables in the arguments scope exist only for the
+function in which they are declared. You can access them by using
+arguments.yourVariableHere.
+
+Let's put this to use in the function:
+
+~~~~ {.prettyprint}
+<cffunction name="getFullName" output="false" access="public" returnType="void">
+    <cfargument name="firstName" type="string" required="false" default="" />
+    <cfargument name="lastName" type="string" required="false" default="" />
+
+    <cfset fullName = arguments.firstName & " " & arguments.lastname />
+
+</cffunction>
+~~~~
+
+Even though the string is constructed, the fullName variable does not
+belong to a scope. We need to make sure that only this function can
+access fullName, so we will var scope it like so:
+
+~~~~ {.prettyprint}
+<cfset var fullName = arguments.firstName & " " & arguments.lastName />
+~~~~
+
+Now that the new variable is scoped, we can now return the variable. To
+do so, use the cfreturn tag. Since the function is now returning
+something, we also need to change the returnType attribute in the
+cffunction tag. Because we are only returning a string, we will just set
+it to string. Functions can return pretty much anything you want them
+to, including structs and objects.
+
+In the end, the function ends up looking like this:
+
+~~~~ {.prettyprint}
+<cffunction name="getFullName" output="false" access="public" returnType="string">
+    <cfargument name="firstName" type="string" required="false" default="" />
+    <cfargument name="lastName" type="string" required="false" default="" />
+
+    <cfset var fullName = arguments.firstName & " " & arguments.lastname />
+
+    <cfreturn fullName />
+</cffunction>
+~~~~
+
+The function is now built, albeit a very simple one. It is concise and
+clearly labelled, meaning that it is easy to read and reuse elsewhere in
+the system.
+
+Now, the question is how to allow people to use it. Fortunately, calling
+functions in ColdFusion is only a little different than setting up any
+other variable. We use the cfset tag.
+
+~~~~ {.prettyprint}
+<cfset fullName = getFullName(firstName="Emily", lastName="Christiansen") />
+~~~~
+
+When it comes to passing in arguments, there are a few ways you can do
+it. Above, the arguments are explicitly named going into the function.
+This is particularly useful for functions that have a large number of
+arguments, as it is far easier to keep track of what actually got passed
+in. Alternatively, something like this could have been done:
+
+~~~~ {.prettyprint}
+<cfset fullName = getFullName("Emily", "Christiansen") />
+~~~~
+
+This approach relies on the arguments being passed in the same order in
+which they are specified in the method signature above. It can get very
+confusing for functions with large numbers of arguments.
+
+Another option is available if working within one function and sending
+the same arguments to a helper function. For example, the getFullName
+function could be used by another, larger function. Let's call it
+getGreeting:
+
+~~~~ {.prettyprint}
+<cffunction name="getGreeting"  output="false" access="public" returnType="string">
+    <cfargument name="firstName" type="string" required="false" default="" />
+    <cfargument name="lastName" type="string" required="false" default="" />
+
+    <cfset var fullName = getFullName(argumentCollection=arguments) />
+
+    <!--- We can do more stuff with the fullName variable here --->
+
+</cffunction>
+~~~~
+
+In the above example, argumentCollection = arguments was used to pass
+the same arguments from one function to another. This is very handy when
+passing a bunch of arguments to another functions with the same argument
+names. This is much faster than typing out the names of each and every
+argument.
+
+In order to call a function, it needs to be put somewhere. There are a
+number of ways to accomplish this. The simplest way is to put it in a
+.cfm page and call it.
+
+~~~~ {.prettyprint}
+<cfset fullName = getFullName(firstName="Emily", lastName="Christiansen") />
+
+<cfoutput>
+    Hello, #fullName#!
+</cfoutput>
+
+<cffunction name="getFullName" output="false" access="public" returnType="string">
+    <cfargument name="firstName" type="string" required="false" default="" />
+    <cfargument name="lastName" type="string" required="false" default="" />
+
+    <cfset var fullName = arguments.firstName & " " & arguments.lastname />
+
+    <cfreturn fullName />
+</cffunction>
+~~~~
+
+Putting the function into the very same .cfm page being used to display
+our greeting is not very conducive to code reuse.
+
