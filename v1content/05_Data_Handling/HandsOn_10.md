@@ -1,8 +1,8 @@
 In this hands on, we are going to create a more complex query and output that to the page.
 
-**Tags Used**: [\<cfquery>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fae.html), [\<cfoutput>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html), [\<cfelse>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe6.html)
+**Tags Used**: [\<cfquery>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-p-q/cfquery.html), [\<cfoutput>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html), [\<cfelse>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-d-e/cfelse.html)
 
-**Functions Used**: [dateFormat](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff4.html), [len](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f38.html)
+**Functions Used**: [dateFormat](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/DateFormat.html), [len](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/len.html)
 
 1. Open up the `/www/resume.cfm` file in your code editor.
 1. Below the `mySkillset` query, create another open `<cfquery>` tag with the following attributes:

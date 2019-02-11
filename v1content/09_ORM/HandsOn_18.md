@@ -1,6 +1,6 @@
 In this hands on example, you are going to create the ORM entities for the Blog Section.
 
-**Functions Used**: [ormReload](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSfd7453be0f56bba463eeeea71230904a189-8000.html)
+**Functions Used**: [ormReload](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-m-r/ormreload.html)
 
 1. Open up the `/www/Application.cfc` file in your code editor.
 1. Locate the `this.sessionTimeout` variable declaration on or around line 6.

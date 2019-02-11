@@ -1,8 +1,8 @@
 In this hands on example, you are going to add the list and create functionality in the Admin for the blog posts and categories.
 
-**Tags Used**: [\<cfset>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffd.html)
+**Tags Used**: [\<cfset>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfset.html)
 
-**Functions Used**: [EntityLoad](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WS32C28934-CDCE-497f-8212-6342141C5846.html), [EntityNew](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSfd7453be0f56bba437188258123092b394c-7ffe.html), [now](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff5.html)
+**Functions Used**: [EntityLoad](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-e-g/entityload.html), [EntityNew](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-e-g/entitynew.html), [now](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-m-r/now.html)
 
 1. Open up the `/www/admin/content/blog/editBlogPost.cfm` file in your code editor.
 1. Locate the `Edit Entity` comment tag on or around line 39.

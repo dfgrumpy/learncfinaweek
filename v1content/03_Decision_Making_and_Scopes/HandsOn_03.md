@@ -1,6 +1,6 @@
 In this hands on, you are going to add some conditional logic to the site as well as create a form post.
 
-**Tags Used**: [\<cfif>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe8.html), [\<cfparam>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7faf.html)
+**Tags Used**: [\<cfif>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-i/cfif.html), [\<cfparam>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-p-q/cfparam.html)
 
 1. Open up the `/www/contact.cfm` file in your code editor.
 1. Locate the comment that reads Message Output.

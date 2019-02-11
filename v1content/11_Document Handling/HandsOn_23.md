@@ -2,9 +2,9 @@ In this hands on example, you are going to make a call to Twitter to get a list 
 
 **Update**: This hands on originally used the twitter api v1, which is no longer supported. We hae updated the code sample to use a different xml file.
 
-**Tags Used**: [\<cfhttp>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffc.html), [\<cfloop>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe2.html), [\<cfoutput>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html)
+**Tags Used**: [\<cfhttp>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-g-h/cfhttp.html), [\<cfloop>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-j-l/cfloop.html), [\<cfoutput>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html)
 
-**Functions Used**: [dateFormat](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff4.html)
+**Functions Used**: [dateFormat](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/DateFormat.html)
 
 1. Open up the `/www/contact.cfm` file in your code editor.
 1. First, make a `<cfhttp>` call to get the data from Twitter. Create a `<cfhttp>` tag directly after the `<cfset>` block. Your code should be on or around line 7. The `<cfhttp>` tag should have the following attributes:

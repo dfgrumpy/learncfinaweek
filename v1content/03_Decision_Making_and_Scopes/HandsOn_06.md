@@ -1,6 +1,6 @@
 In this hands on, we are going to refactor our code and take out any unnecessary logic we might have.
 
-**Tags Used**: [\<cfif>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe8.html), [\<cfelse>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe6.html)
+**Tags Used**: [\<cfif>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-i/cfif.html), [\<cfelse>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-d-e/cfelse.html)
 
 1. Open up the `/www/contact.cfm` file in your code editor and locate the `<cfif>` statement that checks the `form.contactname` variable. Remove the `eq 0` part of the expression; as any number greater than 0 is treated as true, and the number 0 is treated as false, we do not need this additional part of the `<cfif>` statement. Because we only want to run the code when there is NO value passed we must negate the value by putting the word NOT before it.
 1. Remove the `eq 0` part of the `form.email` and `form.message` `<cfif>` statements and add NOT before the `len` function call.

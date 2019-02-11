@@ -1,8 +1,8 @@
 In this hands on, you are going to validate the form data that was submitted and output any problems that might have occurred. We will access data from the form scope.
 
-**Tags Used**: [\<cfset>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffd.html), [\<cfif>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe8.html)
+**Tags Used**: [\<cfset>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfset.html), [\<cfif>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-i/cfif.html)
 
-**Functions Used**: [len](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f38.html)
+**Functions Used**: [len](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/len.html)
 
 1. Locate the comment that says `Message Output` in the `/www/contact.cfm` file and remove all the code that is inside the `<cfif>` tag just below it.
 1. Inside the `<cfif>` tag create a variable called `OK` and set it to true.

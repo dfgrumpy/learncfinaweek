@@ -1,8 +1,8 @@
 In this hands on we will create an Application.cfc file, create some application wide variables, and implement some of the Application.cfc event handlers.
 
-**Tags Used**: [\<cfset>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffd.html), [\<cfquery](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fae.html)
+**Tags Used**: [\<cfset>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfset.html), [\<cfquery](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-p-q/cfquery.html)
 
-**Functions Used**: [createTimeSpan](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7d4f.html), [structKeyExists](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fbb.html), [createObject](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ec2.html)
+**Functions Used**: [createTimeSpan](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/CreateTimeSpan.html), [structKeyExists](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-s/structkeyexists.html), [createObject](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/CreateObject.html)
 
 1. Create a new file called `Application.cfc` in `/www/`.
 1. Open up the `/www/Application.cfc` file in your code editor. Note: for this hands on we will be doing all our coding in script format.

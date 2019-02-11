@@ -1,6 +1,6 @@
 In this hands on example, you are going to add email functionality to the contact form.
 
-**Tags Used**: [\<cfmail>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f8e.html)
+**Tags Used**: [\<cfmail>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfmail.html)
 
 1. Open up the `/www/contact.cfm` file in your code editor.
 1. First we need to create a `<cfmail>` tag. Locate the line of code which reads 'Form submitted successfully!' on or around line 59.

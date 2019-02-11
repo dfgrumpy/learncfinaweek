@@ -1,8 +1,8 @@
 In this hands on, we are going to generate an XML sitemap that is formatted for use with Google Sitemaps.
 
-**Tags Used**: [\<cfxml>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7697.html), [\<cfoutput>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html), [\<cffile>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fa1.html)
+**Tags Used**: [\<cfxml>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-u-z/cfxml.html), [\<cfoutput>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html), [\<cffile>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-f/cffile.html)
 
-**Functions Used**: [toString](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f9e.html)
+**Functions Used**: [toString](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-t-z/tostring.html)
 
 1. Create a new file in the `/www/` folder called `generateSitemap.cfm`.
 1. On line 1, create an open <cfxml> tag and provide the following attribute:

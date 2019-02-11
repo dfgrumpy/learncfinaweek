@@ -1,8 +1,8 @@
 In this hands on, you are going to add an Error Handling solution to the web site.
 
-**Tags Used**: [\<cfdump>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ef7.html)
+**Tags Used**: [\<cfdump>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-d-e/cfdump.html)
 
-**Functions Used**: [include](http://help.adobe.com/en_US/ColdFusion/10.0/Developing/WSe9cbe5cf462523a02805926a1237efcbfd5-7ffe.html#WSc3ff6d0ea77859461172e0811cbec22c24-7ec0), [mail](http://help.adobe.com/en_US/ColdFusion/10.0/Developing/WSe9cbe5cf462523a02805926a1237efcbfd5-7ffe.html#WSc3ff6d0ea77859461172e0811cbec22c24-7ec0)
+**Functions Used**: [include](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-i/cfinclude.html), [mail](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfmail.html)
 
 1. Open up the `/www/Application.cfc` file in your code editor.
 1. After the `onRequestStart` function, create a new function called `onError`. The function will accept 2 arguments. The first is of type `any` and is called `Exception`. The second is of type `string` and is called `EventName`. Your code should look similar to this:

@@ -1,6 +1,6 @@
 In this section of the hands on we will switch from tag based code to script based code and create a structure of data. We will then output that on the page.
 
-**Tags Used**: [\<cfscript>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ebf.html), [\<cfoutput>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html)
+**Tags Used**: [\<cfscript>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfscript.html), [\<cfoutput>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html)
 
 1. Open up the `/www/about.cfm` file in your code editor.
 1. Locate line 1 and write an opening and closing `<cfscript>` block. Put the closing `</cfscript>` tag on the second line. Your code should look something like this:

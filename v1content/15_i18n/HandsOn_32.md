@@ -1,6 +1,6 @@
 In this hands on we will change our locale and update the date and time outputs to change the display based on our locale.
 
-**Functions Used**: [LsdateFormat](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6de1.html), [LstimeFormat](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6dd5.html), [setLocale](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fa3.html)
+**Functions Used**: [LsdateFormat](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/lsdateformat.html), [LstimeFormat](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/lstimeformat.html), [setLocale](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-s/setlocale.html)
 
 1. To be able to change the date and time formats based on our locale, you need to update the functions used for date and time output. Open up the `/www/blogpost.cfm` file in your code editor.
 1. Locate the `blogPost.datePosted` variable output on or around line 52.

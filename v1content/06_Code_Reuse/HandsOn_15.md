@@ -1,8 +1,8 @@
 In this hands on, let's create a component where we will place the `convertStringToASCII` function inside of a component and instantiate it.
 
-**Tags Used**: [\<cfcomponent>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7e0e.html), [\<cffunction>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f5c.html)
+**Tags Used**: [\<cfcomponent>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-c/cfcomponent.html), [\<cffunction>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-f/cffunction.html)
 
-**Functions Used**: [createObject](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ec2.html)
+**Functions Used**: [createObject](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/CreateObject.html)
 
 1. Create a folder called `cfc` inside the `/www/` folder.
 1. Create a file called `utilities.cfc` inside of the `/www/cfc/ `folder.

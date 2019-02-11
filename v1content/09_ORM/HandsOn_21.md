@@ -1,8 +1,8 @@
 In this hands on, we are going to add categories to blog posts. The logic for this involves creating a linking entity to which both the blog post and category will be associated. This is an alternative method to using a many-to-many relationship.
 
-**Tags Used**: [\<cfloop>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe2.html), [\<cfset>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffd.html)
+**Tags Used**: [\<cfloop>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-j-l/cfloop.html), [\<cfset>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfset.html)
 
-**Functions Used**: [EntitySave](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WS89F68C3F-0F5F-4c1b-88C4-4299A1E7F28A.html), [for](http://help.adobe.com/en_US/ColdFusion/10.0/Developing/WSc3ff6d0ea77859461172e0811cbec0a0e0-7fdf.html#WSc3ff6d0ea77859461172e0811cbec0a0e0-7feb), [listAppend](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6d71.html), [EntityDelete](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSC99B2536-9412-4de2-8DE5-34CEBFFF4E93.html)
+**Functions Used**: [EntitySave](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-e-g/entitysave.html), [for](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/extending-coldfusion-pages-with-cfml-scripting/using-cfscript-statements.html#Usingforloops), [ListAppend](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/listappend.html), [EntityDelete](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-e-g/entitydelete.html)
 
 1. In order to be able to associate multiple categories to a blog post and also be able to associate multiple blog posts to a category, we need to create a linking entity. Create a new file called `blogPostCategory.cfc` in the `/www/com/entity/` folder.
 1. Open up the `/www/com/entity/blogPostCategory.cfc` file in your code editor.

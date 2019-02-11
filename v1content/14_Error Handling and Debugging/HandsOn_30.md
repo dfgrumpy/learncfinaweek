@@ -1,6 +1,6 @@
 In this hands on, you are going to create an error and view the error information in the log files.
 
-**Tags Used**: [\<cfoutout>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html)
+**Tags Used**: [\<cfoutout>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html)
 
 1. To view the error information, we must first throw an error. Create a new file in the `/www/` folder called `throwError.cfm`.
 1. Open up the `/www/throwError.cfm` file in your code editor.

@@ -1,8 +1,8 @@
 In this hands on, we will create a more complex loop that uses an array of structures.
 
-**Tags Used**: [\<cfscript>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ebf.html), [\<cfloop>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fe2.html), [\<cfoutput>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html)
+**Tags Used**: [\<cfscript>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfscript.html), [\<cfloop>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-j-l/cfloop.html), [\<cfoutput>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html)
 
-**Functions Used**: [arrayAppend](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f21.html)
+**Functions Used**: [arrayAppend](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-a-b/arrayappend.html)
 
 1. Open the `/www/portfolio.cfm` file in your code editor.
 1. At the top of the file, create open and closing `<cfscript>` tags.

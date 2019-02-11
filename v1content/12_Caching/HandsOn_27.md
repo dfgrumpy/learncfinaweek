@@ -1,8 +1,8 @@
 In this hands on, you are going to add caching to the blog and to the portfolio sections.
 
-**Tags Used**: [\<cfcache>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7d5a.html), [\<cfset>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ffd.html)
+**Tags Used**: [\<cfcache>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-c/cfcache.html), [\<cfset>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-r-s/cfset.html)
 
-**Functions Used**: [sleep](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6f29.html), [cacheGet](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec1b05d-7fe0.html), [isNull](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSe9cbe5cf462523a0-3c4c0bb81223f1daffb-8000.html), [cachePut](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec1b05d-7fd5.html)
+**Functions Used**: [sleep](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-s/sleep.html), [cacheGet](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/CacheGet.html), [isNull](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-in-k/isnull.html), [cachePut](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-c-d/CachePut.html)
 
 1. Before you add caching, turn on the debugging information of the page so that the changes we are about to make can be detected. Login to your ColdFusion administrator. The ColdFusion Administrator will be located at [http://localhost:8500/CFIDE/administrator/](http://localhost:8500/CFIDE/administrator/).
 1. Once logged in, go to 'Debugging Output Settings' under Debugging & Logging.

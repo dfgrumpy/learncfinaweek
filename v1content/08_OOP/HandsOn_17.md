@@ -1,6 +1,6 @@
 In this Hands On we are going to create an encapsulated cfc that holds error data.
 
-**Functions Used**: [ArrayAppend](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f21.html), [ArrayLen](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f1b.html)
+**Functions Used**: [ArrayAppend](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-a-b/arrayappend.html), [ArrayLen](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-a-b/arraylen.html)
 
 1. Create a new file called `errorBean.cfc` in the `/www/admin/cfc/` folder.
 1. Open up the `/www/admin/cfc/errorBean.cfc` file in your code editor.

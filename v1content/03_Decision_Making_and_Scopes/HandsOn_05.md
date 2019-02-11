@@ -1,8 +1,8 @@
 In this hands on, you are going to update our code to provide a better user experience to your users as well as improve the form validation.
 
-**Tags Used**: [\<cfparam>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7faf.html), [\<cfoutout>](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7ff6.html)
+**Tags Used**: [\<cfparam>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-p-q/cfparam.html), [\<cfoutout>](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-tags/tags-m-o/cfoutput.html)
 
-**Functions Used**: [len](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f38.html), [trim](http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7b61.html)
+**Functions Used**: [len](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-l/len.html), [trim](https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-t-z/trim.html)
 
 1. Locate the `<cfparam>` tag at the top of the `/www/contact.cfm` file.
 1. Below the `<cfparam>` tag, create another one for contactname, email, and message. Leave the default attribute as empty. Your code should look similar to this:
