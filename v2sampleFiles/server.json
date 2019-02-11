@@ -1,0 +1,11 @@
+{
+    "app":{
+        "cfengine":"adobe@2018"
+    },
+    "name":"learncfinaweek",
+    "web":{
+        "HTTP":{
+            "port":"8500"
+        }
+    }
+}
