@@ -1,0 +1,31 @@
+{
+    "name":"SuperSimple",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"supersimple",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^2.7.0"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0"
+    },
+    "scripts":{}
+}
