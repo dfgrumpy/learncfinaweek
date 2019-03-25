@@ -1,0 +1,68 @@
+{
+  "menu": [
+    {
+      "name": "Setup",
+      "sections": "Installing ColdFusion,Installing MYSQL,Installing Sample Files"
+    },
+    {
+      "name": "Basics",
+      "sections": "What is ColdFusion?,Setting Variables,Datatypes,Commenting,Script vs Tag,Hands On 1,Hands On 2"
+    },
+    {
+      "name": "Decision Making and Scopes",
+      "sections": "Decision Making,Scopes,Hands On 3,Hands On 4,Hands On 5,Hands On 6"
+    },
+    {
+      "name": "Looping",
+      "sections": "Looping,Hands On 7,Hands On 8"
+    },
+    {
+      "name": "Data Handling",
+      "sections": "Databases,XML,JSON,Hands On 9,Hands On 10,Hands On 11"
+    },
+    {
+      "name": "Code Reuse",
+      "sections": "Functions,Includes,Custom Tags,Components,Hands On 12,Hands On 13,Hands On 14,Hands On 15"
+    },
+    {
+      "name": "Application cfc",
+      "sections": "Application cfc,Hands On 16"
+    },
+    {
+      "name": "OOP",
+      "sections": "OOP,Hands On 17"
+    },
+    {
+      "name": "ORM",
+      "sections": "Intro to ORM,Hands On 18,Hands On 19,Hands On 20,Hands On 21"
+    },
+    {
+      "name": "Mail",
+      "sections": "Mail,Hands On 17"
+    },
+    {
+      "name": "Document Handling",
+      "sections": "cfhttp,cfdocument,cfpdf,cfpdfform,File Manipulation,Image Manipulation,Spreadsheets,Hands On 23,Hands On 24,Hands On 25,Hands On 26"
+    },
+    {
+      "name": "Caching",
+      "sections": "Caching,Hands On 27"
+    },
+    {
+      "name": "Security",
+      "sections": "Introduction,Injection,Cross-Site Scripting (XSS),Cross-Site Request Forgery (CSRF),Session Identifier Protection,File Uploads,Secure Password Storage,ColdFusion Configuration,Hands On 28,Hands On 29"
+    },
+    {
+      "name": "Error Handling and Debugging",
+      "sections": "Error Handling,Debugging,Hands On 30,Hands On 31"
+    },
+    {
+      "name": "i18n",
+      "sections": "i18n,Hands On 32"
+    },
+    {
+      "name": "What to do Next",
+      "sections": ""
+    }
+  ]
+}
