@@ -14,11 +14,10 @@
 		          #a.name#
 		      </h2>
 		    </div>
-		    <div id="collapse_#thiscard#" class="collapse hide" aria-labelledby="heading_#thiscard#" data-parent="##accordionExample">
+		    <div id="collapse_#thiscard# " class="collapse hide" aria-labelledby="heading_#thiscard#" data-parent="##accordionExample">
 		      <div class="card-body">
 		       <div class="list-group">
 					<cfloop array="#listtoarray(a.sections)#" index="b">
-
 						<a href="#event.buildLink('course.index.section.#replace(a.name," ", "-", "all")#.item.#replace(b," ", "-", "all")#')#" class="list-group-item">#b#</a>
 					</cfloop>
 				</div>
