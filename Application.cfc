@@ -11,10 +11,10 @@ component{
 	this.setClientCookies = true;
 
 	// Java Integration
-	this.javaSettings = { 
-		loadPaths = [ ".\lib" ], 
-		loadColdFusionClassPath = true, 
-		reloadOnChange= false 
+	this.javaSettings = {
+		loadPaths = [ ".\lib" ],
+		loadColdFusionClassPath = true,
+		reloadOnChange= false
 	};
 
 	// COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP

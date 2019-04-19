@@ -21,8 +21,8 @@
         "testbox":"^2.7.0"
     },
     "installPaths":{
-        "coldbox":"coldbox",
-        "testbox":"testbox"
+        "coldbox":"coldbox/",
+        "testbox":"testbox/"
     },
     "dependencies":{
         "coldbox":"^5.0.0"
