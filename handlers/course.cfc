@@ -16,7 +16,8 @@ component{
 	function index( event, rc, prc ){
 
     	//event.setlayout('course');
-
+		writeDump( rc );
+		writeDump( prc );
 	}
 
 

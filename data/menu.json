@@ -2,67 +2,411 @@
   "menu": [
     {
       "name": "Setup",
-      "sections": "Installing ColdFusion,Installing MYSQL,Installing Sample Files"
+      "author": "Simon Free",
+      "reviewer": "Dan Fredricks",
+      "sections": [
+        {
+          "name": "Installing ColdFusion",
+          "filename": ""
+        },
+        {
+          "name": "Installing MYSQL",
+          "filename": ""
+        },
+        {
+          "name": "Installing Sample Files",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Basics",
-      "sections": "What is ColdFusion?,Setting Variables,Datatypes,Commenting,Script vs Tag,Hands On 1,Hands On 2"
+      "author": "Dan Wilson",
+      "reviewer": "Dan Wilson",
+      "sections": [
+        {
+          "name": "What is ColdFusion?",
+          "filename": ""
+        },
+        {
+          "name": "Setting Variables",
+          "filename": ""
+        },
+        {
+          "name": "Datatypes",
+          "filename": ""
+        },
+        {
+          "name": "Commenting",
+          "filename": ""
+        },
+        {
+          "name": "Script vs Tag",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 1",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 2",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Decision Making and Scopes",
-      "sections": "Decision Making,Scopes,Hands On 3,Hands On 4,Hands On 5,Hands On 6"
+      "author": "Nic Tunney",
+      "reviewer": "",
+      "sections": [
+        {
+          "name": "Decision Making and Scopes",
+          "filename": ""
+        },
+        {
+          "name": "Scopes",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 3",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 4",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 5",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 6",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Looping",
-      "sections": "Looping,Hands On 7,Hands On 8"
+      "author": "Nic Tunney",
+      "reviewer": "",
+      "sections": [
+        {
+          "name": "Looping",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 7",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 8",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Data Handling",
-      "sections": "Databases,XML,JSON,Hands On 9,Hands On 10,Hands On 11"
+      "author": "Dave Ferguson",
+      "reviewer": "Dave Ferguson",
+      "sections": [
+        {
+          "name": "Databases",
+          "filename": ""
+        },
+        {
+          "name": "XML",
+          "filename": ""
+        },
+        {
+          "name": "JSON",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 9",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 10",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 11",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Code Reuse",
-      "sections": "Functions,Includes,Custom Tags,Components,Hands On 12,Hands On 13,Hands On 14,Hands On 15"
+      "author": "Emily Christiansen",
+      "reviewer": "Matt Gifford",
+      "sections": [
+        {
+          "name": "Functions",
+          "filename": ""
+        },
+        {
+          "name": "Includes",
+          "filename": ""
+        },
+        {
+          "name": "Custom Tags",
+          "filename": ""
+        },
+        {
+          "name": "Components",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 12",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 13",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 14",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 15",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Application cfc",
-      "sections": "Application cfc,Hands On 16"
+      "author": "Adam Tuttle",
+      "reviewer": "Nolan Erck",
+      "sections": [
+        {
+          "name": "Application cfc",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 16",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "OOP",
-      "sections": "OOP,Hands On 17"
+      "author": "Adam Tuttle",
+      "reviewer": "Denard Springle",
+      "sections": [
+        {
+          "name": "OOP",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 17",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "ORM",
-      "sections": "Intro to ORM,Hands On 18,Hands On 19,Hands On 20,Hands On 21"
+      "author": "Sam Farmer",
+      "reviewer": "Masha Edelen",
+      "sections": [
+        {
+          "name": "Intro to ORM",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 18",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 19",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 20",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 21",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Mail",
-      "sections": "Mail,Hands On 17"
+      "author": "Guust Nieuwenhuis",
+      "reviewer": "Guust Nieuwenhuis",
+      "sections": [
+        {
+          "name": "Mail",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 17",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Document Handling",
-      "sections": "cfhttp,cfdocument,cfpdf,cfpdfform,File Manipulation,Image Manipulation,Spreadsheets,Hands On 23,Hands On 24,Hands On 25,Hands On 26"
+      "author": "Tim Cunningham",
+      "reviewer": "",
+      "sections": [
+        {
+          "name": "cfhttp",
+          "filename": ""
+        },
+        {
+          "name": "cfdocument",
+          "filename": ""
+        },
+        {
+          "name": "cfpdf",
+          "filename": ""
+        },
+        {
+          "name": "cfpdfform",
+          "filename": ""
+        },
+        {
+          "name": "File Manipulation",
+          "filename": ""
+        },
+        {
+          "name": "Image Manipulation",
+          "filename": ""
+        },
+        {
+          "name": "Spreadsheets",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 23",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 24",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 25",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 26",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Caching",
-      "sections": "Caching,Hands On 27"
+      "author": "Dan Skaggs",
+      "reviewer": "Matthew Clemente",
+      "sections": [
+        {
+          "name": "Caching",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 27",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Security",
-      "sections": "Introduction,Injection,Cross-Site Scripting (XSS),Cross-Site Request Forgery (CSRF),Session Identifier Protection,File Uploads,Secure Password Storage,ColdFusion Configuration,Hands On 28,Hands On 29"
+      "author": "David Epler",
+      "reviewer": "Pete Freitag",
+      "sections": [
+        {
+          "name": "Introduction",
+          "filename": ""
+        },
+        {
+          "name": "Injection",
+          "filename": ""
+        },
+        {
+          "name": "Cross-Site Scripting (XSS)",
+          "filename": ""
+        },
+        {
+          "name": "Cross-Site Request Forgery (CSRF)",
+          "filename": ""
+        },
+        {
+          "name": "Session Identifier Protection",
+          "filename": ""
+        },
+        {
+          "name": "File Uploads",
+          "filename": ""
+        },
+        {
+          "name": "Secure Password Storage",
+          "filename": ""
+        },
+        {
+          "name": "ColdFusion Configuration",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 28",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 29",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "Error Handling and Debugging",
-      "sections": "Error Handling,Debugging,Hands On 30,Hands On 31"
+      "author": "Simon Free",
+      "reviewer": "Dan Fredricks",
+      "sections": [
+        {
+          "name": "Error Handling",
+          "filename": ""
+        },
+        {
+          "name": "Debugging",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 30",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 31",
+          "filename": ""
+        }
+      ]
     },
     {
       "name": "i18n",
-      "sections": "i18n,Hands On 32"
+      "author": "Paul Hastings",
+      "reviewer": "Paul Hastings",
+      "sections": [
+        {
+          "name": "i18n",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 32",
+          "filename": ""
+        }
+      ]
     },
     {
-      "name": "What to do Next",
-      "sections": ""
+      "name": "Conclusion",
+      "author": "Simon Free",
+      "reviewer": "",
+      "sections": [
+        {
+          "name": "What to do Next",
+          "filename": ""
+        }
+      ]
     }
   ]
 }
