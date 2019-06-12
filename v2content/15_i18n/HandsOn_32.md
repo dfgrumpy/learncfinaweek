@@ -19,7 +19,7 @@ In this hands on we will change our locale and update the date and time outputs 
 
 1. Open up the `/www/blog.cfm` page in your browser.
 1. Navigate to a blog post and review the date and time output. If you are based in the U.S., you will probably not notice any difference. If you are outside of the U.S., then you will probably see a different date and time format.
-1. To allow everyone to see a change in the formatting, let’s create a temporary page which will change our locale. Create a file called `updateLocale.cfm` in the `/www/` folder.
+1. To allow everyone to see a change in the formatting, let's create a temporary page which will change our locale. Create a file called `updateLocale.cfm` in the `/www/` folder.
 1. Open up the `/www/updateLocale.cfm` file in your code editor.
 1. Add the following line of code:
 
