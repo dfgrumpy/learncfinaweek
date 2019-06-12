@@ -18,11 +18,13 @@
     "contributors":[],
     "ignore":[],
     "devDependencies":{
-        "testbox":"^2.7.0"
+        "testbox":"^2.7.0",
+        "cbdebugger":"^1.7.1+29"
     },
     "installPaths":{
         "coldbox":"coldbox/",
-        "testbox":"testbox/"
+        "testbox":"testbox/",
+        "cbdebugger":"modules/cbdebugger/"
     },
     "dependencies":{
         "coldbox":"^5.0.0"
