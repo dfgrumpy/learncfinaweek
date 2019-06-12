@@ -1,39 +1,65 @@
-
-<div class="row">
-<!---Side Bar --->
-	<div class="col-lg-4">
-	
-		<div class="accordion" id="accordionExample">
-
-		<cfloop array="#prc.menudata.menu#" index="a">	
-			<cfoutput>
-			<cfset thisCard = left(hash(a.name), 10)>	
-		  <div class="card">
-		    <div class="card-header" id="heading_#thiscard#" style="padding: 0 0;">
-		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="##collapse_#thiscard#" aria-expanded="true" aria-controls="collapse_#thiscard#">
-		          #a.name#
-		      </h2>
-		    </div>
-		    <div id="collapse_#thiscard# " class="collapse hide" aria-labelledby="heading_#thiscard#" data-parent="##accordionExample">
-		      <div class="card-body">
-		       <div class="list-group">
-					<cfloop array="#listtoarray(a.sections)#" index="b">
-						<a href="#event.buildLink('course.index.section.#replace(a.name," ", "-", "all")#.item.#replace(b," ", "-", "all")#')#" class="list-group-item">#b#</a>
-					</cfloop>
-				</div>
-		      </div>
-		    </div>
-		  </div>
-		  </cfoutput>
-		</cfloop>
+<cfoutput>
+	<div class="row">
+		<!---Side Bar --->
+		<div class="col-lg-4">
+			<div class="accordion" id="accordionExample">
+				<cfloop array="#prc.menudata#" index="a">
+					<cfset thisCard = {}>
+					<cfset thisCard.headingId = "heading_" & left(hash(a.name), 10)>
+					<cfset thisCard.collapseId = "collapse_" & left(hash(a.name), 10)>
+					<cfset thisCard.headingClass = "card-header p-0">
+					<cfset thisCard.headingLinkClass = "btn btn-block text-left">
+					<cfset thisCard.bodyClass = "collapse">
+					<cfif replace(a.name," ", "_", "all") is prc.section>
+						<cfset thisCard.headingClass &= " bg-primary">
+						<cfset thisCard.headingLinkClass &= " text-light">
+						<cfset thisCard.bodyClass &= " show">
+					</cfif>
+					<div class="card">
+						<div class="#thisCard.headingClass#" id="#thisCard.headingId#">
+							<h2 class="mb-0">
+								<button class="#thisCard.headingLinkClass#" type="button"
+										data-toggle="collapse" data-target="###thiscard.collapseId#"
+										aria-expanded="true" aria-controls="#thiscard.collapseId#">
+									#a.name#
+								</button>
+							</h2>
+						</div>
+						<div id="#thiscard.collapseId#" class="#thisCard.bodyClass#"
+								aria-labelledby="#thisCard.headingId#" data-parent="##accordionExample">
+							<div class="card-body">
+								<div class="list-group">
+									<cfloop array="#a.sections#" index="b">
+										<cfset thisItem.class = "list-group-item list-group-item-action">
+										<cfset thisItem.linkItem = replace( replace( b.name, "?", "", "all") ," ", "_", "all")>
+										<cfset thisItem.linkURL = 'course.index.section.' & replace( a.name," ", "_", "all" )
+											& '.item.' & thisItem.linkItem>
+										<cfif thisItem.linkItem is prc.item>
+											<cfset thisItem.class &= "  bg-secondary text-light">
+										</cfif>
+										<a href="#event.buildLink( thisItem.linkURL )#"
+												class="#thisItem.class#">#b.name#</a>
+									</cfloop>
+								</div>
+							</div>
+						</div>
+					</div>
+				</cfloop>
+			</div>
 		</div>
+
+		<div class="col-lg-8">
+			<h1>#prc.thisSection.name#</h1>
+			<h2>#prc.thisSection.itemName#</h2>
+			<h6>
+				By #prc.thisSection.author#
+				<cfif prc.thisSection.reviewer.len() &&
+						prc.thisSection.reviewer NEQ prc.thisSection.author>
+					<br>Reviewed/Revised By #prc.thisSection.reviewer#
+				</cfif>
+			</h6>
+		</div>
+
 	</div>
-	<div class="col-lg-8">
 
-		<cfoutput>
-		Section: #rc.section#
-		</cfoutput>
-	</div>
-
-</div>
-
+</cfoutput>
