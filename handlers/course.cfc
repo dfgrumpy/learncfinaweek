@@ -24,7 +24,7 @@ component{
 
 	function preHandler( event, action, eventArguments, rc, prc ){
 
-		prc.menudata = deserializejson( fileread( '#expandpath( "." )#/data/menu.json' ) ).menu;
+		prc.menudata = deserializejson( fileread( '#expandpath( "." )#/data/week1.json' ) ).menu;
 		prc.section = structKeyExists( rc, 'section' ) ? rc.section : 'Setup';
 		prc.item = structKeyExists( rc, 'section' ) && structKeyExists( rc, 'item' )
 			? rc.item : 'Installing_ColdFusion';
