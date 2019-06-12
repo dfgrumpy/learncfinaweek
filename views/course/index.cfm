@@ -49,15 +49,18 @@
 		</div>
 
 		<div class="col-lg-8">
-			<h1>#prc.thisSection.name#</h1>
-			<h2>#prc.thisSection.itemName#</h2>
-			<h6>
-				By #prc.thisSection.author#
-				<cfif prc.thisSection.reviewer.len() &&
-						prc.thisSection.reviewer NEQ prc.thisSection.author>
-					<br>Reviewed/Revised By #prc.thisSection.reviewer#
-				</cfif>
-			</h6>
+			<div class="jumbotron">
+				<h1>#prc.thisSection.name#</h1>
+				<h2>#prc.thisSection.itemName#</h2>
+				<hr class="my-4">
+				<h6>
+					By #prc.thisSection.author#
+					<cfif prc.thisSection.reviewer.len() &&
+							prc.thisSection.reviewer NEQ prc.thisSection.author>
+						<br>Reviewed/Revised By #prc.thisSection.reviewer#
+					</cfif>
+				</h6>
+			</div>
 			#prc.thisSection.content#
 		</div>
 
