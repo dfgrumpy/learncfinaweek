@@ -3,6 +3,8 @@
 */
 component{
 
+	property name="cbmarkdown" inject="Processor@cbmarkdown";
+
 	// OPTIONAL HANDLER PROPERTIES
 	this.prehandler_only 	= "";
 	this.prehandler_except 	= "";
@@ -37,6 +39,9 @@ component{
 		});
 		prc.thisSection[ 'itemName' ] = prc.thisSection.sections[ itemIndex ].name;
 		prc.thisSection[ 'itemFileName' ] = prc.thisSection.sections[ itemIndex ].filename;
+		var chapterPath = '/data/week1/' & prc.thisSection.itemFileName;
+		var chapterMarkdown = fileread( expandpath( chapterPath ) );
+		prc.thisSection[ 'content' ] = cbmarkdown.toHTML( chapterMarkdown );
 	}
 
 

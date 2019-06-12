@@ -26,31 +26,31 @@
       "sections": [
         {
           "name": "What is ColdFusion?",
-          "filename": ""
+          "filename": "02.1_What_is_ColdFusion.md"
         },
         {
           "name": "Setting Variables",
-          "filename": ""
+          "filename": "02.2_Setting_Variables.md"
         },
         {
           "name": "Datatypes",
-          "filename": ""
+          "filename": "02.3_Datatypes.md"
         },
         {
           "name": "Commenting",
-          "filename": ""
+          "filename": "02.4_Commenting.md"
         },
         {
           "name": "Script vs Tag",
-          "filename": ""
+          "filename": "02.5_Script_vs_Tag.md"
         },
         {
           "name": "Hands On 1",
-          "filename": ""
+          "filename": "HandsOn_01.md"
         },
         {
           "name": "Hands On 2",
-          "filename": ""
+          "filename": "HandsOn_02.md"
         }
       ]
     },

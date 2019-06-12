@@ -58,6 +58,7 @@
 					<br>Reviewed/Revised By #prc.thisSection.reviewer#
 				</cfif>
 			</h6>
+			#prc.thisSection.content#
 		</div>
 
 	</div>
