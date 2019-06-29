@@ -1,11 +1,8 @@
 {
     "app":{
+        "libDirs":"./cbJars/",
         "cfengine":"adobe@2018"
     },
-    "name":"learncfinaweek",
-    "web":{
-        "HTTP":{
-            "port":"8500"
-        }
-    }
+    "cfconfigfile":"./cfconfig/myLearnConfig.json",
+    "name":"learnCFinaWeek"
 }

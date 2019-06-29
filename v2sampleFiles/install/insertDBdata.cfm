@@ -1,6 +1,3 @@
-<cflocation  url="insertDBdata.cfm">
-
-
 <cfparam name="form.submitted" default="0">
 <!DOCTYPE html>
 <html lang="en">
@@ -85,7 +82,7 @@
 	<!---
 		Create Database
 	--->
-	
+
 	<!---
 		ToDo - Need to be able to check that the password is correct
 	---->
@@ -108,21 +105,28 @@
 			<cfelseif findnocase('windows',systemname)>
 				<cfset checkbatchfilename = expandpath('checkDB.bat') />
 				<cfset batchfilename = expandpath('createDB.bat') />
-				<cfsavecontent variable="batchCheck">cd C:\Program Files\MYSQL\MYSQL Server 5.5\bin
-				mysql -u root -p#form.mysqlRoot# --execute="SHOW Databases" mysql
+				
+<!--- 				<cfsavecontent variable="batchCheck">cd C:\Program Files\MySQL\MySQL Server 8.0\bin 
+				mysql -uroot -p#form.mysqlRoot# -P3307 --execute="SHOW Databases" mysql
 				</cfsavecontent>
-				<cfsavecontent variable="batchContent">cd C:\Program Files\MYSQL\MYSQL Server 5.5\bin
-				mysql -uroot -p#form.mysqlRoot# -e "CREATE DATABASE #database#"
-				</cfsavecontent>		
+				<cfsavecontent variable="batchContent">cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+				mysql -uroot -p#form.mysqlRoot# -P3307 -e "CREATE DATABASE #database#"
+				</cfsavecontent>	--->	
+				<cfsavecontent variable="batchCheck">cd C:\Program Files\MariaDB 10.2\bin
+				mysql -uroot -p#form.mysqlRoot# -P3306 --execute="SHOW Databases" mysql
+				</cfsavecontent>
+				<cfsavecontent variable="batchContent">cd C:\Program Files\MariaDB 10.2\bin
+				mysql -uroot -p#form.mysqlRoot# -P3306 -e "CREATE DATABASE #database#"
+				</cfsavecontent>
 			<cfelse>
 				Operating system not found <cfdump var="#systemName#" abort />
 			</cfif>			
-				
+			
 			<cffile action="write" file="#checkbatchfilename#" output="#batchCheck#" mode="777">
 			<cffile action="write" file="#batchfilename#" output="#batchContent#" mode="777">
 			
 			<cfexecute name="#checkbatchfilename#" arguments="" timeout="10" errorvariable="checkError" variable="checkOutput"></cfexecute>
-			
+
 			<cfif findnocase('Access denied for user',checkError)>
 				<cfset messages['database'].message = 'Database - Incorrect MySQL Login Details' />
 				<cfset messages['database'].status = 'bad' />
@@ -134,7 +138,7 @@
 				<cfset messages['database'].status = 'medium' />
 			<cfelse>
 				<cfexecute name="#batchfilename#" arguments="/c" timeout="10" errorvariable="batchError" variable="batchOutput"></cfexecute>
-				
+
 				<cfif len(batchError)>
 					<cfif findnocase('command not found',batchError)>
 						<cfset messages['database'].message = 'Database could not be created' />
@@ -153,7 +157,8 @@
 			</cfif>	
 		</cfoutput>
 		<cfset dbCreated=true/>	
-		<cfcatch type="any">
+	<cfcatch type="any">		<!--- 		<cfdump  var="#cfcatch#" abort="false"> --->
+
 			<cfif messages['database'].status eq 'notPerformed'>
 				<cfset messages['database'].message = 'Database could not be created' />
 				<cfset messages['database'].status = 'bad' />
@@ -187,39 +192,41 @@
 				messages['datasource'].status = 'medium';  
 				
 			}else{
-				myObj.setMYSQL5(driver="MySQL5", 
-			        name="#database#", 
-			        host = "#form.mysqlip#", 
-			        port = "#form.mysqlport#",
-			        database = "#database#",
-			        username = "root",
-			        password = "#form.mysqlroot#",
-			        login_timeout = "29",
-			        timeout = "23",
-			        interval = 6,
-			        buffer = "64000",
-			        blob_buffer = "64000",
-			        setStringParameterAsUnicode = "false",
-			        description = "learncfinaweek sample database",
-			        pooling = true,
-			        maxpooledstatements = 999,
-			        enableMaxConnections = "true",
-			        maxConnections = "299",
-			        disable_clob = false,
-			        disable_blob = false,
-			        disable = false,
-			        storedProc = false,
-			        alter = true,
-			        grant = false,
-			        select = true,
-			        update = true,
-			        create = true,
-			        delete = true,
-			        drop = true,
-			        revoke = false );
+				// myObj.setMYSQL5(driver="MySQL5", 
+			  //       name="#database#", 
+			  //       host = "#form.mysqlip#", 
+			  //       port = "#form.mysqlport#",
+			  //       database = "#database#",
+			  //       username = "root",
+			  //       password = "#form.mysqlroot#",
+			  //       login_timeout = "29",
+			  //       timeout = "23",
+			  //       interval = 6,
+			  //       buffer = "64000",
+			  //       blob_buffer = "64000",
+			  //       setStringParameterAsUnicode = "false",
+			  //       description = "learncfinaweek sample database",
+			  //       pooling = true,
+			  //       maxpooledstatements = 999,
+			  //       enableMaxConnections = "true",
+			  //       maxConnections = "299",
+			  //       disable_clob = false,
+			  //       disable_blob = false,
+			  //       disable = false,
+			  //       storedProc = false,
+			  //       alter = true,
+			  //       grant = false,
+			  //       select = true,
+			  //       update = true,
+			  //       create = true,
+			  //       delete = true,
+			  //       drop = true,
+			  //       revoke = false );
 			        
-			   messages['datasource'].message = 'Datasource created succesfully';
-			   messages['datasource'].status = 'good';     
+			  //  messages['datasource'].message = 'Datasource created succesfully';
+			  //  messages['datasource'].status = 'good';  
+				messages['datasource'].message = 'Datasource not created by commandBox';
+			  //  messages['datasource'].status = 'bad';     
 			}
 		</cfscript>
 		
@@ -238,7 +245,12 @@
 				<cfset messages['tables'].status = 'bad' />	
 			</cfcatch>	
 		</cftry>	
-		
+<!--- 		<cfdump  var="#messages#" abort="true"> 
+
+    "cfconfigfile":"./cfconfig/learnCFLocal.json",
+		need to create a server.json file from a 2018 server
+		need to craeste a server.json file from a lucee server
+--->
 		<!---
 			Create Tables
 		--->
