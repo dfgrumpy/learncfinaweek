@@ -1,0 +1,11 @@
+{
+    "app":{
+        "cfengine":"adobe@2016"
+    },
+    "name":"learncfinaweek",
+    "web":{
+        "rewrites":{
+            "enable":true
+        }
+    }
+}

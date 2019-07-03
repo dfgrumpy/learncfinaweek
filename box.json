@@ -1,0 +1,35 @@
+{
+    "name":"SuperSimple",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"supersimple",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^2.7.0",
+        "cbdebugger":"^1.7.1+29"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "cbdebugger":"modules/cbdebugger/",
+        "cbmarkdown":"modules/cbmarkdown/"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0",
+        "cbmarkdown":"^3.2.0+27"
+    },
+    "scripts":{}
+}

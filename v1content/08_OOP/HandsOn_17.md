@@ -46,7 +46,7 @@ In this Hands On we are going to create an encapsulated cfc that holds error dat
 
 1. Finally we will create a function that removes all errors from the object. Create a function called `clearErrors` that is `public`, does not return anything and accepts no arguments.
 1. Inside the function assign an empty array to the `variables.errors` variable.
-1. You have now created an encapsulated object. We will test that this object works in one of the other Hands On’s but for now confirm that your cfc looks similar to the following:
+1. You have now created an encapsulated object. We will test that this object works in one of the other Hands On's but for now confirm that your cfc looks similar to the following:
 
         component{
             public errorBean function init(){
