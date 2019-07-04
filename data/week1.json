@@ -7,15 +7,15 @@
       "sections": [
         {
           "name": "Installing ColdFusion",
-          "filename": ""
+          "filename": "01.1_Installing_ColdFusion.md"
         },
         {
           "name": "Installing MYSQL",
-          "filename": ""
+          "filename": "01.2_Installing_MySQL.md"
         },
         {
           "name": "Installing Sample Files",
-          "filename": ""
+          "filename": "01.3_Installing_Sample_Files.md"
         }
       ]
     },
