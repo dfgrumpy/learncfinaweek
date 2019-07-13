@@ -111,15 +111,15 @@
       "sections": [
         {
           "name": "Databases",
-          "filename": ""
+          "filename": "05.1_Databases.md"
         },
         {
           "name": "XML",
-          "filename": ""
+          "filename": "05.2_JSON.md"
         },
         {
           "name": "JSON",
-          "filename": ""
+          "filename": "05.3_XML.md"
         },
         {
           "name": "Hands On 9",
@@ -142,19 +142,19 @@
       "sections": [
         {
           "name": "Functions",
-          "filename": ""
+          "filename": "06.1_Functions.md"
         },
         {
           "name": "Includes",
-          "filename": ""
+          "filename": "06.2_Includes.md"
         },
         {
           "name": "Custom Tags",
-          "filename": ""
+          "filename": "06.3_Custom_Tags.md"
         },
         {
           "name": "Components",
-          "filename": ""
+          "filename": "06.4_Components.md"
         },
         {
           "name": "Hands On 12",
@@ -181,11 +181,11 @@
       "sections": [
         {
           "name": "Application cfc",
-          "filename": ""
+          "filename": "07.1_Applicationcfc.md"
         },
         {
           "name": "Hands On 16",
-          "filename": ""
+          "filename": "HandsOn_16.md"
         }
       ]
     },
@@ -196,7 +196,7 @@
       "sections": [
         {
           "name": "OOP",
-          "filename": ""
+          "filename": "08.1_OOP.md"
         },
         {
           "name": "Hands On 17",
@@ -211,23 +211,23 @@
       "sections": [
         {
           "name": "Intro to ORM",
-          "filename": ""
+          "filename": "09.1_Intro_to_ORM.md"
         },
         {
           "name": "Hands On 18",
-          "filename": ""
+          "filename": "HandsOn_18.md"
         },
         {
           "name": "Hands On 19",
-          "filename": ""
+          "filename": "HandsOn_19.md"
         },
         {
           "name": "Hands On 20",
-          "filename": ""
+          "filename": "HandsOn_20.md"
         },
         {
           "name": "Hands On 21",
-          "filename": ""
+          "filename": "HandsOn_21.md"
         }
       ]
     },
@@ -238,10 +238,10 @@
       "sections": [
         {
           "name": "Mail",
-          "filename": ""
+          "filename": "10.1_Mail.md"
         },
         {
-          "name": "Hands On 17",
+          "name": "Hands On 22",
           "filename": ""
         }
       ]
@@ -304,7 +304,11 @@
       "sections": [
         {
           "name": "Caching",
-          "filename": ""
+          "filename": "12.1_Caching.md"
+        },
+        {
+          "name": "Advanced Caching",
+          "filename": "12.2_Advanced_Caching.md"
         },
         {
           "name": "Hands On 27",
@@ -319,43 +323,43 @@
       "sections": [
         {
           "name": "Introduction",
-          "filename": ""
+          "filename": "13.1_Introduction.md"
         },
         {
           "name": "Injection",
-          "filename": ""
+          "filename": "13.2_Injection.md"
         },
         {
           "name": "Cross-Site Scripting (XSS)",
-          "filename": ""
+          "filename": "13.3_CrossSite_Scripting_XSS.md"
         },
         {
           "name": "Cross-Site Request Forgery (CSRF)",
-          "filename": ""
+          "filename": "13.4_CrossSite_Request_Forgery_CSRF.md"
         },
         {
           "name": "Session Identifier Protection",
-          "filename": ""
+          "filename": "13.5_Session_Identifier_Protection.md"
         },
         {
           "name": "File Uploads",
-          "filename": ""
+          "filename": "13.6_File_Uploads.md"
         },
         {
           "name": "Secure Password Storage",
-          "filename": ""
+          "filename": "13.7_Secure_Password_Storage.md"
         },
         {
           "name": "ColdFusion Configuration",
-          "filename": ""
+          "filename": "13.8_ColdFusion_Configuration.md"
         },
         {
           "name": "Hands On 28",
-          "filename": ""
+          "filename": "HandsOn_28.md"
         },
         {
           "name": "Hands On 29",
-          "filename": ""
+          "filename": "HandsOn_29.md"
         }
       ]
     },
@@ -366,19 +370,19 @@
       "sections": [
         {
           "name": "Error Handling",
-          "filename": ""
+          "filename": "14.1_Error_Handling.md"
         },
         {
           "name": "Debugging",
-          "filename": ""
+          "filename": "14.2_Debugging.md"
         },
         {
           "name": "Hands On 30",
-          "filename": ""
+          "filename": "HandsOn_30.md"
         },
         {
           "name": "Hands On 31",
-          "filename": ""
+          "filename": "HandsOn_31.md"
         }
       ]
     },
@@ -389,11 +393,11 @@
       "sections": [
         {
           "name": "i18n",
-          "filename": ""
+          "filename": "15.1_i18n.md"
         },
         {
           "name": "Hands On 32",
-          "filename": ""
+          "filename": "HandsOn_32.md"
         }
       ]
     },
