@@ -40,8 +40,12 @@ component{
 		prc.thisSection[ 'itemName' ] = prc.thisSection.sections[ itemIndex ].name;
 		prc.thisSection[ 'itemFileName' ] = prc.thisSection.sections[ itemIndex ].filename;
 		var chapterPath = '/data/week1/' & prc.thisSection.itemFileName;
-		var chapterMarkdown = fileread( expandpath( chapterPath ) );
-		prc.thisSection[ 'content' ] = cbmarkdown.toHTML( chapterMarkdown );
+		if ( fileExists( expandpath( chapterPath ) ) ){
+			var chapterMarkdown = fileread( expandpath( chapterPath ) );
+			prc.thisSection[ 'content' ] = cbmarkdown.toHTML( chapterMarkdown );
+		} else {
+			prc.thisSection[ 'content' ] = '<p>Content not yet available</p>';
+		}
 	}
 
 
