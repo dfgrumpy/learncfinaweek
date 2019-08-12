@@ -8,46 +8,46 @@ In this hands on example, you are going to add the list and create functionality
 1. Locate the `Edit Entity` comment tag on or around line 39.
 1. Load the entity into a `blogPost` variable by adding the following code:
 
-        <cfset blogPost = EntityLoad('BlogPost',form.id,true) />
+        <cfset blogPost = EntityLoad('BlogPost',form.id,true)>
 
 1. Set the blog post properties from the `form` scope by adding the following lines of code below the `<cfset>`:
 
-        <cfset blogPost.title = form.title />
-        <cfset blogPost.summary = form.summary />
-        <cfset blogPost.body = form.body />
-        <cfset blogPost.datePosted = form.datePosted />
-        <cfset blogPost.modifiedDateTime = now() />
+        <cfset blogPost.title = form.title>
+        <cfset blogPost.summary = form.summary>
+        <cfset blogPost.body = form.body>
+        <cfset blogPost.datePosted = form.datePosted>
+        <cfset blogPost.modifiedDateTime = now()>
 
 1. Next, add the logic to create a new blog post. Locate the comment tag that reads `Create Entity` on or around line 47.
 1. Create a new blog post object and set it to the `blogPost` variable by adding the following line of code:
 
-        <cfset blogPost = EntityNew('BlogPost') />
+        <cfset blogPost = EntityNew('BlogPost')>
 
 1. Set the object properties from the form scope by adding the following lines of code below the `<cfset>`:
 
-        <cfset blogPost.title = form.title />
-        <cfset blogPost.summary = form.summary />
-        <cfset blogPost.body = form.body />
-        <cfset blogPost.datePosted = form.datePosted />
-        <cfset blogPost.createdDateTime = now() />
+        <cfset blogPost.title = form.title>
+        <cfset blogPost.summary = form.summary>
+        <cfset blogPost.body = form.body>
+        <cfset blogPost.datePosted = form.datePosted>
+        <cfset blogPost.createdDateTime = now()>
 
 1. At this point, the `blogPost` object has all the information it needs and will be saved successfully. The next step is pull the blog post information for the edit form. To do this, find the `Get Entity Data` comment tag.
 1. Create a blog Post object using the URL variable ID and set it to the `blogPost` variable by adding the following line of code:
 
-        <cfset blogPost = EntityLoad('BlogPost',url.id, true ) />
+        <cfset blogPost = EntityLoad('BlogPost',url.id, true )>
 
 1. Now set the `blogPost` properties into the `form` scope so that they will display in the form. To do this, add the following lines of code below the `<cfset>` tag:
 
-        <cfset form.id = blogPost.id />
-        <cfset form.title = blogPost.title />
-        <cfset form.summary = blogPost.Summary />
-        <cfset form.body = blogPost.body />
-        <cfset form.datePosted = blogPost.datePosted />
+        <cfset form.id = blogPost.id>
+        <cfset form.title = blogPost.title>
+        <cfset form.summary = blogPost.Summary>
+        <cfset form.body = blogPost.body>
+        <cfset form.datePosted = blogPost.datePosted>
 
 1. The add/edit process is now complete, but before you test it, update the listing page to pull the entities. Open up the `/www/admin/content/blog/listblogpost.cfm` file in your code editor.
 1. Find the comment `Pull Blog Posts` and add a `<cfset>` below, that calls `EntityLoad` on `blogPost` and sets the value to a variable called `blogPosts`. Do this by adding the following line of code:
 
-        <cfset blogPosts = EntityLoad('BlogPost') />
+        <cfset blogPosts = EntityLoad('BlogPost')>
 
 1. Next, output the information to the user. Find the `Title` comment tag and output the title property of the `blogPost` object. Do this by adding the following code below the `Title` comment tag:
 

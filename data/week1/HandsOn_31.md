@@ -19,9 +19,9 @@ In this hands on, you are going to add an Error Handling solution to the web sit
         errorEmail.setFrom('system@domain.com');
         errorEmail.setSubject('An Error has Occured');
         errorEmail.setBody('
-            Message: #arguments.exception.message# <br />
-            Details: #arguments.exception.detail# <br />
-            Type: #arguments.exception.type# <br />
+            Message: #arguments.exception.message# <br>
+            Details: #arguments.exception.detail# <br>
+            Type: #arguments.exception.type# <br>
         ');
         errorEmail.setType('html');
         errorEmail.send();
@@ -35,9 +35,9 @@ In this hands on, you are going to add an Error Handling solution to the web sit
             errorEmail.setFrom('system@domain.com');
             errorEmail.setSubject('An Error has Occured');
             errorEmail.setBody('
-                Message: #arguments.exception.message# <br />
-                Details: #arguments.exception.detail# <br />
-                Type: #arguments.exception.type# <br />
+                Message: #arguments.exception.message# <br>
+                Details: #arguments.exception.detail# <br>
+                Type: #arguments.exception.type# <br>
             ');
             errorEmail.setType('html');
             errorEmail.send();
@@ -52,7 +52,7 @@ In this hands on, you are going to add an Error Handling solution to the web sit
 1. Open up the `/www/throwError.cfm` file in your code editor.
 1. Change the contents of the file to the following code:
 
-        <cfdump value="2" />
+        <cfdump value="2">
 
 1. Open up the `/www/throwError.cfm` file in your browser and notice that an error is not thrown. `onError` does not catch tag syntax errors. For that, we must rely on the site-wide error handler.
 1. Create a new file called `sitewideErrorHandler.cfm` in the `/` folder.

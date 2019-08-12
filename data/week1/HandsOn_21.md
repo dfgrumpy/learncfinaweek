@@ -33,24 +33,24 @@ In this hands on, we are going to add categories to blog posts. The logic for th
 
         <cfloop list="#form.categories#" index="categoryID">
             <!--- Add Category to Entity --->
-            <cfset blogPostCategory = EntityNew('blogPostCategory') />
-            <cfset blogCategory = EntityLoad('blogCategory',categoryID,true) />
+            <cfset blogPostCategory = EntityNew('blogPostCategory')>
+            <cfset blogCategory = EntityLoad('blogCategory',categoryID,true)>
         </cfloop>
 
 1. After the `blogCategory` variable has been created, set the values of the `blogPostCategory`. The first value to be set is the `blogCategory`. To do this, set the `blogCategory` property value of the `blogPostCategory` object to the `blogCategory` variable. Your code should be similar to this:
 
-        <cfset blogPostCategory.blogCategory = blogCategory />
+        <cfset blogPostCategory.blogCategory = blogCategory>
 
 1. Next, set the `blogPost` property of `blogPostCategory` with the `blogPost` variable which was saved earlier in the page.
 1. Once this is done, save the entity. Simply call the `entitySave` function and pass in the `blogPostCategory` object. Your final code should look similar to this:
 
         <cfloop list="#form.categories#" index="categoryID">
             <!--- Add Category to Entity --->
-            <cfset blogPostCategory = EntityNew('blogPostCategory') />
-            <cfset blogCategory = EntityLoad('blogCategory',categoryID,true) />
-            <cfset blogPostCategory.blogCategory = blogCategory />
-            <cfset blogPostcategory.blogPost = blogPost />
-            <cfset entitySave(blogPostCategory) />
+            <cfset blogPostCategory = EntityNew('blogPostCategory')>
+            <cfset blogCategory = EntityLoad('blogCategory',categoryID,true)>
+            <cfset blogPostCategory.blogCategory = blogCategory>
+            <cfset blogPostcategory.blogPost = blogPost>
+            <cfset entitySave(blogPostCategory)>
         </cfloop>
 
 1. Now that this logic is complete, we can associate a category with a blog post and save it. Open up the `/www/admin/content/editBlogPost.cfm` page in your browser.
@@ -59,7 +59,7 @@ In this hands on, we are going to add categories to blog posts. The logic for th
 1. You will notice that the category is not pre-checked. This is not because the category has not been saved, but because we have not put the logic in place to generate the list of category ID's that the page needs. To do this, you need to set a form value called 'categories'. Locate the `Get Entity Data` comment tag.
 1. Below the last `<cfset>` tag in the `<cfif>` block, create a new `<cfset>` tag that sets `blogpost.categoryids` to the variable `form.categories`. Your code should look similar to this:
 
-        <cfset form.categories = blogPost.categoryids  />
+        <cfset form.categories = blogPost.categoryids >
 
 1. If you were to run the page now, you would generate an error. The functionality to get the category ID's is not present in the `blogPost` entity. We must first create that functionality by adding a custom function into the `blogPost` entity. Open up the `/www/com/entity/blogPost.cfc` file in your code editor.
 1. Below the last property definition, create a public function that returns a string and is called `getCategoryIDs`.
@@ -103,7 +103,7 @@ In this hands on, we are going to add categories to blog posts. The logic for th
 1. Inside the `<cfloop>`, create a `<cfset>` tag that calls the `entityDelete` function and pass it in the variable `category`. Your final code should look similar to this:
 
         <cfloop array="#blogPost.getCategories()#" index="category">
-            <cfset entityDelete(category) />
+            <cfset entityDelete(category)>
         </cfloop>
 
 1. Go back to the `/www/admin/content/blog/listblogposts.cfm`, click on a blog post, and save the blog to confirm you have no errors.

@@ -9,7 +9,7 @@ In this hands on example, you are going to update the front end of the web site 
 1. Open up the `/www/blog.cfm` file in your code editor.
 1. First, pull all blog posts (in real life, you would only want to pull 10 or so entries per page). To pull all entries, call the `EntityLoad` function passing in the string 'blogPost' and assigning that to a `blogPosts` variable. Do this by replacing the `<cfquery>` block with the following line of code:
 
-        <cfset blogPosts = EntityLoad('blogPost') />
+        <cfset blogPosts = EntityLoad('blogPost')>
 
 1. Next, loop over the objects and output them. To do this, we will use a `<cfloop>` tag. Locate the `<cfoutput>` tag and replace it with the following line of code:
 
@@ -32,7 +32,7 @@ In this hands on example, you are going to update the front end of the web site 
 1. Next, update the blog post detail page to display the relevant blog post information. Open up the `/www/blogpost.cfm` file in your code editor.
 1. At the top of the file, load in the blog post object and set it to a variable called `blogPost` using the following code:
 
-        <cfset blogPost = EntityLoad('BlogPost',url.id,true) />
+        <cfset blogPost = EntityLoad('BlogPost',url.id,true)>
 
 1. Then replace the placeholder content with the real content. Locate the `<h2>` tag and replace its content with `#blogPost.title#`.
 1. Replace the date with `#dateformat(blogPost.dateposted,'mm/dd/yyyy')#`.
@@ -103,39 +103,39 @@ In this hands on example, you are going to update the front end of the web site 
     * **default**: 0
 1. Next, add the logic to save the comment only if the form has been submitted. You can check if the form has been submitted by looking at the `form.submitted` value. After the `<cfset>` tag on or around line two, create a `<cfif>` tag, which checks if `form.submitted` is true. Your code should look similar to this:
 
-        <cfparam name="form.submitted" default="0" />
-        <cfset blogPost = EntityLoad('blogPost',url.id,true) />
+        <cfparam name="form.submitted" default="0">
+        <cfset blogPost = EntityLoad('blogPost',url.id,true)>
         <cfif form.submitted>
 
         </cfif>
 
 1. Inside the `<cfif>` block, create a new instance of the `blogComment` entity and set the author and comment values from the `form` scope. Your code should look similar to this:
 
-        <cfset comment = entityNew('blogComment') />
-        <cfset comment.author = form.author />
-        <cfset comment.comment = form.comment />
+        <cfset comment = entityNew('blogComment')>
+        <cfset comment.author = form.author>
+        <cfset comment.comment = form.comment>
 
 1. Next, set the `createdDateTime` value using the `now()` function and add the comment to the `blogPost` object. Your code should look similar to this:
 
-        <cfset comment = entityNew('blogComment') />
-        <cfset comment.author = form.author />
-        <cfset comment.comment = form.comment />
-        <cfset comment.createdDateTime = now() />
-        <cfset blogPost.addComment(comment) />
+        <cfset comment = entityNew('blogComment')>
+        <cfset comment.author = form.author>
+        <cfset comment.comment = form.comment>
+        <cfset comment.createdDateTime = now()>
+        <cfset blogPost.addComment(comment)>
 
 1. Now that you have created the comment and added it to the blog post, you need to save these changes by calling `entitySave` on the `blogPost` object. Add the following line of code after your last `<cfset>` tag:
 
-        <cfset EntitySave(blogPost) />
+        <cfset EntitySave(blogPost)>
 
 1. Your final code block should look similar to this:
 
         <cfif form.submitted>
-            <cfset comment = entityNew('blogComment') />
-            <cfset comment.author = form.author />
-            <cfset comment.comment = form.comment />
-            <cfset comment.createdDateTime = now() />
-            <cfset blogPost.addComment(comment) />
-            <cfset EntitySave(blogPost) />
+            <cfset comment = entityNew('blogComment')>
+            <cfset comment.author = form.author>
+            <cfset comment.comment = form.comment>
+            <cfset comment.createdDateTime = now()>
+            <cfset blogPost.addComment(comment)>
+            <cfset EntitySave(blogPost)>
         </cfif>
 
 1. Locate the `<form>` tag on or around line 78 and append the following code to the action attribute:

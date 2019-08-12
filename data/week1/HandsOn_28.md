@@ -14,15 +14,15 @@ In this hands on, we are going to add security to the blog comments. As this sec
 
 1. Once we know the value is a simple value, we need to call the `canonicalize()` method on the `form.author` value. To make things easier, assign the result of the `canonicalize()` call back to the `form.author` variable. The code will look similar to this:
 
-        <cfset form.author = canonicalize(form.author, true, true) />
+        <cfset form.author = canonicalize(form.author, true, true)>
 
 1. Do the same for the remaining `comment` variable. Your final code should look similar to this:
 
         <cfif isSimpleValue(form.author)>
-            <cfset form.author = canonicalize(form.author, true, true) />
+            <cfset form.author = canonicalize(form.author, true, true)>
         </cfif>
         <cfif isSimpleValue(form.comment)>
-            <cfset form.comment = canonicalize(form.comment, true, true) />
+            <cfset form.comment = canonicalize(form.comment, true, true)>
         </cfif>
 
 1. Next, check if any of the values were not simple values. If one was not a simple value, it will throw an error. Create a `<cfif>` statement that checks if either are not simple values, and if one isn't, throw an error with the message `Validation Error`. Your code should look similar to this:

@@ -7,11 +7,11 @@ In the first part of this hands on we are going to convert some pages to .cfm pa
 1. Open up the `/www/index.cfm` file in your code editor.
 1. First, let's create some variables that we will display later on in the page. On line 1, write a `<cfset>` tag that sets the variable `myName` with a value of your name. The tag should look something like this:
 
-        <cfset myName="Simon" />
+        <cfset myName="Simon">
 
 1. On the next line, create another variable called `myPosition` with a value of 'Developer'. The tag should look something like:
 
-        <cfset myPosition="Developer" />
+        <cfset myPosition="Developer">
 
 1. Now, let's output these variables. Locate the text \[Name\] on or around line 80. Replace \[Name\] with `#myName#`.
 1. Locate the text \[position\] on or around line 81. Replace \[position\] with `#myPosition#`.
@@ -24,7 +24,7 @@ In the first part of this hands on we are going to convert some pages to .cfm pa
 1. Refresh the browser and confirm that you now see your name and position displayed on the page.
 1. Go to line 2 and update the variable `myPosition` so that it has a value of 'A Developer'. The tag should look similar to this:
 
-        <cfset myPosition="A Developer" />
+        <cfset myPosition="A Developer">
 
 1. Refresh the browser and confirm that you see your change.
 1. In your code editor, locate the comment that says `Data Output`. Add a new line after this tag and write the following text: "This is where the name and position are output".

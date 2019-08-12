@@ -23,7 +23,7 @@ In this hands on we will change our locale and update the date and time outputs 
 1. Open up the `/www/updateLocale.cfm` file in your code editor.
 1. Add the following line of code:
 
-        <cfset setLocale('English (UK)') />
+        <cfset setLocale('English (UK)')>
 
 1. Open up the /www/updateLocale.cfm page in your browser. You will not see any output, but the new locale has been set (unless you are in the UK; in that case, you should try a different locale such as English (US) ).
 1. Navigate back to the /www/blog.cfm page and click on a blog post. You should now notice that the date and time formats have changed. The changes might be slight, but they are there.

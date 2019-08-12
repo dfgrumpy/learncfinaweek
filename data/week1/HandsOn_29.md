@@ -22,11 +22,11 @@ In this hands on we are going to secure our session and improve our admin securi
 
 1. Inside of the `<cfif>` tag, create two values: the first is the `salt` value we will be using and the other will be the hashed `password`. To create the `salt` value, create a `<cfset>` tag that creates a variable called salt. In the `<cfset>` tag call the `Hash()` function and pass in a call to the `GenerateSecretKey` function as the string to hash, and pass in `SHA-512` as the algorithm to use when hashing. In the `GenerateSecretKey` call, pass in `AES` as the algorithm to use. Your `<cfset>` should look similar to this:
 
-        <cfset salt = Hash(GenerateSecretKey("AES"), "SHA-512") />
+        <cfset salt = Hash(GenerateSecretKey("AES"), "SHA-512")>
 
 1. Next, generate the hashed password. To do this, create another `<cfset>` tag that sets a variable called `password`. In the `<cfset>`, call the `Hash()` function again and pass it in a concatenated string of the `form.password` value and the `salt` value. Tell the `Hash()` function to use the `SHA-512` algorithm. Your `<cfset>` should look similar to this:
 
-        <cfset Password = Hash(form.password & salt, "SHA-512") />
+        <cfset Password = Hash(form.password & salt, "SHA-512")>
 
 1. Once there is a salt and a hashed password created, we need to update the queries to accept these values. Locate the `<cfquery>` tag that updates the administrator record on or around line 45. Update the SQL code so that the password value stored is the new password variable. Also, update the SQL so that the salt value is saved into a column called `salt`. The update query should look similar to this:
 
@@ -34,15 +34,15 @@ In this hands on we are going to secure our session and improve our admin securi
             UPDATE
                 administrator
             SET
-                firstname = <cfqueryparam value="#trim(form.firstname)#" cfsqltype="varchar" />,
-                lastname = <cfqueryparam value="#trim(form.lastname)#" cfsqltype="varchar" />,
-                emailaddress = <cfqueryparam value="#trim(form.emailaddress)#" cfsqltype="varchar" />
+                firstname = <cfqueryparam value="#trim(form.firstname)#" cfsqltype="varchar">,
+                lastname = <cfqueryparam value="#trim(form.lastname)#" cfsqltype="varchar">,
+                emailaddress = <cfqueryparam value="#trim(form.emailaddress)#" cfsqltype="varchar">
                 <cfif len(trim(form.password))>
-                    ,password = <cfqueryparam value="#password#" cfsqltype="varchar" />
-                    ,salt = <cfqueryparam value="#salt#" cfsqltype="varchar" />
+                    ,password = <cfqueryparam value="#password#" cfsqltype="varchar">
+                    ,salt = <cfqueryparam value="#salt#" cfsqltype="varchar">
                 </cfif>
             WHERE
-                id = <cfqueryparam value="#form.id#" cfsqltype="integer" />
+                id = <cfqueryparam value="#form.id#" cfsqltype="integer">
         </cfquery>
 
 1. Once the update functionality is changed, it is time to change the insert functionality. Locate the `<cfquery>` that creates a new `administrator` and update the statement to use the new `password` variable. Also update the SQL to store the `salt` value. Your `<cfquery>` should look similar to this:
@@ -56,11 +56,11 @@ In this hands on we are going to secure our session and improve our admin securi
                 password,
                 salt
             ) VALUES (
-                <cfqueryparam value="#trim(form.firstname)#" cfsqltype="varchar" />,
-                <cfqueryparam value="#trim(form.lastname)#" cfsqltype="varchar" />,
-                <cfqueryparam value="#trim(form.emailaddress)#" cfsqltype="varchar" />,
-                <cfqueryparam value="#password#" cfsqltype="varchar" />,
-                <cfqueryparam value="#salt#" cfsqltype="varchar" />
+                <cfqueryparam value="#trim(form.firstname)#" cfsqltype="varchar">,
+                <cfqueryparam value="#trim(form.lastname)#" cfsqltype="varchar">,
+                <cfqueryparam value="#trim(form.emailaddress)#" cfsqltype="varchar">,
+                <cfqueryparam value="#password#" cfsqltype="varchar">,
+                <cfqueryparam value="#salt#" cfsqltype="varchar">
             )
         </cfquery>
 
