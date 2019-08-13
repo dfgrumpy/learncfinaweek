@@ -108,7 +108,6 @@ In this hands on, we are going to add categories to blog posts. The logic for th
 
 1. Go back to the `/www/admin/content/blog/listblogposts.cfm`, click on a blog post, and save the blog to confirm you have no errors.
 
-Homework
---------
+## Homework
 
 Create a function similar to the `getCategoryIDs` function. Instead of returning ID's, create a function that returns a list of the category names. Replace the category output, which is currently 'ColdFusion', in `/www/blog.cfm` with this new function call.

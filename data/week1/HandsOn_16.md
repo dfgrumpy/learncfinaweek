@@ -88,8 +88,7 @@ In this hands on we will create an Application.cfc file, create some application
 1. In a browser, navigate to the `/www/about.cfm` page, remembering to include `?reload=1` in the URL as we have made an `application.cfc` change.
 1. Notice that the page loads normally. The `convertStringToASCII` function is now stored in the application scope and can be accessed from any page within the application.
 
-Homework
---------
+## Homework
 
 1. Remove the datasource attribute from all query tags.
 1. Update the email address in the `/www/contact.cfm` file to use the `convertStringToASCII` function.

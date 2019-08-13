@@ -16,7 +16,7 @@ In this section of the hands on we will switch from tag based code to script bas
 1. Locate the \[Name\] placeholder text on or around line 116.
 1. Replace \[Name\] with `#personalInfo.name#`.
 1. Replace the other placeholders with their matching variables in the `personalInfo` struct.
-1. Wrap all the <div> tags with the class of clr in a `<cfoutput>` tag. Your code should look similar to this:
+1. Wrap all the `<div>` tags with the class of clr in a `<cfoutput>` tag. Your code should look similar to this:
 
         <cfoutput>
             <div class="clr"><div class="input-box">Name </div><span>#personalInfo.name#</span> </div>
@@ -38,8 +38,7 @@ In this section of the hands on we will switch from tag based code to script bas
 1. Do this also for the website and Skype links.
 1. Refresh the `/www/about.cfm` page in your browser and confirm that you now see your information being displayed.
 
-Homework
---------
+## Homework
 
 1. Convert all remaining .html pages to .cfm pages.
 1. Update all navigation links to point to the .cfm files rather than the .html files.

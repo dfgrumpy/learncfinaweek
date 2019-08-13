@@ -65,7 +65,6 @@ In this hands on example, you are going to add the list and create functionality
 1. Click on 'Add Blog Post' and create a new blog.
 1. Go back to the listing page and edit your blog.
 
-Homework
---------
+## Homework
 
 Update the `blogCategory` files in the admin so that blog categories can be create and edited.
