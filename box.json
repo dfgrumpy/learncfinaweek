@@ -28,7 +28,7 @@
         "cbmarkdown":"modules/cbmarkdown/"
     },
     "dependencies":{
-        "coldbox":"^5.0.0",
+        "coldbox":"^5.5.0+958",
         "cbmarkdown":"^3.2.0+27"
     },
     "scripts":{}

@@ -23,13 +23,10 @@
 		<div class="card card-block">
 			<ul class="card-body nav flex-column bg-light">
 				<li class="nav-item">
-	                <a class="nav-link" href="http://www.coldbox.org">Online Course</a>
+	                <a class="nav-link" href="#event.buildLink('course.index')#">Online Course</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="http://blog.coldbox.org">Download PDF</a>
-	            </li>
-	            <li class="nav-item">
-	                <a class="nav-link" href="https://ortussolutions.atlassian.net/browse/COLDBOX">Download Sample Files</a>
+	                <a class="nav-link" href="https://github.com/dfgrumpy/learncfinaweek">Download Sample Files</a>
 	            </li>
 			</ul>
 		</div>
@@ -47,7 +44,7 @@
 		</p>
 
 		<h4>
-			Start the course today! View the course online, download the PDF or even view the eBook. There is nothing stopping you from being a ColdFusion developer within a week!
+			Start the course today! View the course online. There is nothing stopping you from being a ColdFusion developer within a week!
 		</h4>
 
 	</div>
