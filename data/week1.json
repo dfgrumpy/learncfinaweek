@@ -3,7 +3,9 @@
     {
       "name": "Setup",
       "author": "Simon Free",
+      "authorid": "6",
       "reviewer": "Dan Fredricks",
+      "reviewerid": "12",      
       "sections": [
         {
           "name": "Installing ColdFusion",
@@ -23,6 +25,8 @@
       "name": "Basics",
       "author": "Dan Wilson",
       "reviewer": "Dan Wilson",
+      "authorid": "11",
+      "reviewerid": "11",
       "sections": [
         {
           "name": "What is ColdFusion?",
@@ -58,6 +62,8 @@
       "name": "Decision Making and Scopes",
       "author": "Nic Tunney",
       "reviewer": "",
+      "authorid": "9",
+      "reviewerid": "",
       "sections": [
         {
           "name": "Decision Making",
@@ -89,6 +95,8 @@
       "name": "Looping",
       "author": "Nic Tunney",
       "reviewer": "",
+      "authorid": "9",
+      "reviewerid": "9",
       "sections": [
         {
           "name": "Looping",
@@ -108,6 +116,8 @@
       "name": "Data Handling",
       "author": "Dave Ferguson",
       "reviewer": "Dave Ferguson",
+      "authorid": "5",
+      "reviewerid": "5",
       "sections": [
         {
           "name": "Databases",
@@ -115,11 +125,11 @@
         },
         {
           "name": "XML",
-          "filename": "05.2_JSON.md"
+          "filename": "05.3_XML.md"
         },
         {
           "name": "JSON",
-          "filename": "05.3_XML.md"
+          "filename": "05.2_JSON.md"
         },
         {
           "name": "Hands On 9",
@@ -139,6 +149,8 @@
       "name": "Code Reuse",
       "author": "Emily Christiansen",
       "reviewer": "Matt Gifford",
+      "authorid": "1",
+      "reviewerid": "13",
       "sections": [
         {
           "name": "Functions",
@@ -178,6 +190,8 @@
       "name": "Application cfc",
       "author": "Adam Tuttle",
       "reviewer": "Nolan Erck",
+      "authorid": "10",
+      "reviewerid": "14",
       "sections": [
         {
           "name": "Application cfc",
@@ -193,6 +207,8 @@
       "name": "OOP",
       "author": "Adam Tuttle",
       "reviewer": "Denard Springle",
+      "authorid": "10",
+      "reviewerid": "15",
       "sections": [
         {
           "name": "OOP",
@@ -208,6 +224,8 @@
       "name": "ORM",
       "author": "Sam Farmer",
       "reviewer": "Masha Edelen",
+      "authorid": "4",
+      "reviewerid": "16",
       "sections": [
         {
           "name": "Intro to ORM",
@@ -235,6 +253,8 @@
       "name": "Mail",
       "author": "Guust Nieuwenhuis",
       "reviewer": "Guust Nieuwenhuis",
+      "authorid": "8",
+      "reviewerid": "8",
       "sections": [
         {
           "name": "Mail",
@@ -250,6 +270,8 @@
       "name": "Document Handling",
       "author": "Tim Cunningham",
       "reviewer": "",
+      "authorid": "2",
+      "reviewerid": "2",
       "sections": [
         {
           "name": "cfhttp",
@@ -301,6 +323,8 @@
       "name": "Caching",
       "author": "Dan Skaggs",
       "reviewer": "Matthew Clemente",
+      "authorid": "9",
+      "reviewerid": "17",
       "sections": [
         {
           "name": "Caching",
@@ -320,6 +344,8 @@
       "name": "Security",
       "author": "David Epler",
       "reviewer": "Pete Freitag",
+      "authorid": "3",
+      "reviewerid": "18",
       "sections": [
         {
           "name": "Introduction",
@@ -367,6 +393,8 @@
       "name": "Error Handling and Debugging",
       "author": "Simon Free",
       "reviewer": "Dan Fredricks",
+      "authorid": "6",
+      "reviewerid": "12",
       "sections": [
         {
           "name": "Error Handling",
@@ -390,6 +418,8 @@
       "name": "i18n",
       "author": "Paul Hastings",
       "reviewer": "Paul Hastings",
+      "authorid": "7",
+      "reviewerid": "7",
       "sections": [
         {
           "name": "i18n",
@@ -404,6 +434,7 @@
     {
       "name": "Conclusion",
       "author": "Simon Free",
+      "authorid": "6",
       "reviewer": "",
       "sections": [
         {

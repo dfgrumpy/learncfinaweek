@@ -1,3 +1,4 @@
+
 <cfoutput>
 	<div class="row">
 		<!---Side Bar --->
@@ -53,13 +54,14 @@
 				<h1>#prc.thisSection.name#</h1>
 				<h2>#prc.thisSection.itemName#</h2>
 				<hr class="my-4">
-				<h6>
-					By #prc.thisSection.author#
-					<cfif prc.thisSection.reviewer.len() &&
-							prc.thisSection.reviewer NEQ prc.thisSection.author>
-						<br>Reviewed/Revised By #prc.thisSection.reviewer#
-					</cfif>
-				</h6>
+					<dl class="row">
+  						<dt class="col-sm-4">Content Author:</dt>
+  						<dd class="col-sm-8">#prc.thisSection.author#</dd>
+						<cfif prc.thisSection.Revised>
+							<dt class="col-sm-4">Reviewed/Revised By: </dt>
+  							<dd class="col-sm-8">#prc.thisSection.reviewer#</dd>
+						</cfif>
+  					</dl>
 			</div>
 			#prc.thisSection.content#
 		</div>
