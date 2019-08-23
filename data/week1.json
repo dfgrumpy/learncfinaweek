@@ -10,8 +10,8 @@
           "filename": "01.1_Installing_ColdFusion.md"
         },
         {
-          "name": "Installing MYSQL",
-          "filename": "01.2_Installing_MySQL.md"
+          "name": "Installing the Database",
+          "filename": "01.2_Installing_DB.md"
         },
         {
           "name": "Installing Sample Files",
