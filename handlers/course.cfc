@@ -3,9 +3,9 @@
 */
 component{
 
-    property name="jsonDataService" inject="jsonDataService";
-    property name="contributorsService" inject="contributorsService";	
-    property name="courseService" inject="courseService";	
+	property name="jsonDataService" inject="jsonDataService";
+	property name="contributorsService" inject="contributorsService";
+	property name="courseService" inject="courseService";
 
 	// OPTIONAL HANDLER PROPERTIES
 	this.prehandler_only 	= "";
@@ -20,12 +20,10 @@ component{
 	function index( event, rc, prc ){
 
 		//event.setlayout('course');
-		
+
 		// week is hardcoded for now
 		prc.thisSection = courseService.courseData(rc, 1);
 		prc.thisSection["authorData"] = contributorsService.getContributorById(prc.thisSection.authorid);
-
-		
 
 	}
 

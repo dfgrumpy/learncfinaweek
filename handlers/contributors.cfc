@@ -4,7 +4,7 @@
 component{
 
 
-    property name="jsonDataService" inject="jsonDataService";	
+	property name="jsonDataService" inject="jsonDataService";
 
 	// OPTIONAL HANDLER PROPERTIES
 	this.prehandler_only 	= "";
@@ -15,20 +15,20 @@ component{
 	this.aroundHandler_except = "";
 	// REST Allowed HTTP Methods Ex: this.allowedMethods = {delete='POST,DELETE',index='GET'}
 	this.allowedMethods = {};
-	
 
 
-	
+
+
 	function preHandler( event, rc, prc, action, eventArguments ){
 		prc.contributors = jsonDataService.contributorsList();
 	}
-	
 
-	
+
+
 
 	function index( event, rc, prc ){
 
-		
+
 	}
 
 }

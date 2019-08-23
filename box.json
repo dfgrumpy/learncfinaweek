@@ -19,13 +19,15 @@
     "ignore":[],
     "devDependencies":{
         "testbox":"^2.7.0",
-        "cbdebugger":"^1.7.1+29"
+        "cbdebugger":"^1.7.1+29",
+        "route-visualizer":"^1.2.0+4"
     },
     "installPaths":{
         "coldbox":"coldbox/",
         "testbox":"testbox/",
         "cbdebugger":"modules/cbdebugger/",
-        "cbmarkdown":"modules/cbmarkdown/"
+        "cbmarkdown":"modules/cbmarkdown/",
+        "route-visualizer":"modules/route-visualizer/"
     },
     "dependencies":{
         "coldbox":"^5.5.0+958",

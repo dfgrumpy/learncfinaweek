@@ -2,21 +2,21 @@
 * I am a new Model Object
 */
 component accessors="true"{
-	
+
 	// Properties
-	
-	property name="cbmarkdown" inject="Processor@cbmarkdown";	
-    property name="jsonDataService" inject="jsonDataService";
+
+	property name="cbmarkdown" inject="Processor@cbmarkdown";
+	property name="jsonDataService" inject="jsonDataService";
 
 
 	/**
 	 * Constructor
 	 */
 	courseService function init(){
-		
+
 		return this;
 	}
-	
+
 
 	function courseData(required data, required week) {
 
@@ -36,7 +36,7 @@ component accessors="true"{
 		thisData.thisSection = thismenudata[ sectionIndex ];
 
 		var itemIndex = arrayFind( thisData.thisSection.sections, function( item ) {
-			return replace( replace( item.name, "?", "", "all") ," ", "_", "all") == thisData.item;
+			return replace( replace( item.name, "?", "_", "all") ," ", "_", "all") == thisData.item;
 		});
 
 		thisData.thisSection[ 'itemName' ] = thisData.thisSection.sections[ itemIndex ].name;
