@@ -37,15 +37,16 @@
         <a class="nav-link" href="#event.buildLink('resources.index')#">Resources</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="##">Github</a>
+        <a class="nav-link" href="https://github.com/dfgrumpy/learncfinaweek" target="_blank">Github</a>
       </li>
+      <!---
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="##" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="##">Course PDF</a>
           <a class="dropdown-item" href="##">Sample Files</a>
         </div>
-      </li>
+      </li> --->
     </ul>
   </div>
 </nav>
@@ -60,16 +61,27 @@
   <div class="container">
         <p class="text-center">Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
       	<p class="text-center">
-      		Hosting provided by <a href="http://www.silvervinesoftware.com" target="_new">Silvervine Software</a>
+      		Hosting provided by <a href="https://www.hostmedia.co.uk/" target="_new">Hostmedia</a>
       	</p>
 	  </div>
 
 </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+    $(function () {
+
+      $('[data-toggle="popover"]').on('click', function(){
+          $(this).popover({ trigger: 'focus', content: $(this).prev().html()}).popover('show');
+      })
+
+    })
+  </script>
 
 </html>
 
