@@ -52,16 +52,18 @@
 		<div class="col-lg-8">
 			<div class="jumbotron">
 				<h1>#prc.thisSection.name#</h1>
-				<h2>#prc.thisSection.itemName#</h2>
+				<cfif NOT prc.thisSection.name IS prc.thisSection.itemName>
+					<h2>#prc.thisSection.itemName#</h2>
+				</cfif>
 				<hr class="my-4">
 					<dl class="row">
-  						<dt class="col-sm-4">Content Author:</dt>
-  						<dd class="col-sm-8">#prc.thisSection.author#</dd>
+						<dt class="col-sm-4">Content Author:</dt>
+						<dd class="col-sm-8">#prc.thisSection.author#</dd>
 						<cfif prc.thisSection.Revised>
 							<dt class="col-sm-4">Reviewed/Revised By: </dt>
-  							<dd class="col-sm-8">#prc.thisSection.reviewer#</dd>
+							<dd class="col-sm-8">#prc.thisSection.reviewer#</dd>
 						</cfif>
-  					</dl>
+					</dl>
 			</div>
 			#prc.thisSection.content#
 		</div>
