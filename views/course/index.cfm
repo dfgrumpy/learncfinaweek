@@ -32,7 +32,7 @@
 								<div class="list-group">
 									<cfloop array="#a.sections#" index="b">
 										<cfset thisItem.class = "list-group-item list-group-item-action">
-										<cfset thisItem.linkItem = replace( replace( b.name, "?", "", "all") ," ", "_", "all")>
+										<cfset thisItem.linkItem = rereplace( b.name, '[\?\s]', "_", "all")>
 										<cfset thisItem.linkURL = 'course.index.section.' & replace( a.name," ", "_", "all" )
 											& '.item.' & thisItem.linkItem>
 										<cfif thisItem.linkItem is prc.item>
