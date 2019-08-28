@@ -129,6 +129,27 @@ component{
 		route( "/week1/Hands_On_27/" )
 			.toRedirect( "/course/index/section/Caching/item/Hands_On_27/");
 
+		route( "/week1/Introduction/" )
+			.toRedirect( "/course/index/section/Security/item/Introduction/");
+		route( "/week1/Injection/" )
+			.toRedirect( "/course/index/section/Security/item/Injection/");
+		route( "/week1/Cross_Site_Scripting__XSS_/" )
+			.toRedirect( "/course/index/section/Security/item/Cross-Site_Scripting_(XSS)/");
+		route( "/week1/Cross_Site_Request_Forgery__CSRF_/" )
+			.toRedirect( "/course/index/section/Security/item/Cross-Site_Request_Forgery_(CSRF)/");
+		route( "/week1/Session_Identifier_Protection/" )
+			.toRedirect( "/course/index/section/Security/item/Session_Identifier_Protection/");
+		route( "/week1/File_Uploads/" )
+			.toRedirect( "/course/index/section/Security/item/File_Uploads/");
+		route( "/week1/Secure_Password_Storage/" )
+			.toRedirect( "/course/index/section/Security/item/Secure_Password_Storage/");
+		route( "/week1/ColdFusion_Configuration/" )
+			.toRedirect( "/course/index/section/Security/item/ColdFusion_Configuration/");
+		route( "/week1/Hands_On_28/" )
+			.toRedirect( "/course/index/section/Security/item/Hands_On_28/");
+		route( "/week1/Hands_On_29/" )
+			.toRedirect( "/course/index/section/Security/item/Hands_On_29/");
+
 		route( "/week1/" ).toRedirect( "/course/index" );
 
 		route( ":handler/:action?" ).end();

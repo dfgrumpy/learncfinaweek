@@ -36,7 +36,8 @@ component accessors="true"{
 		thisData.thisSection = thismenudata[ sectionIndex ];
 
 		var itemIndex = arrayFind( thisData.thisSection.sections, function( item ) {
-			return replace( replace( item.name, "?", "_", "all") ," ", "_", "all") == thisData.item;
+			//writeDump( rereplace( item.name, '[\?\-\s]', "_", "all") );
+			return rereplace( item.name, '[\?\s]', "_", "all") == thisData.item;
 		});
 
 		thisData.thisSection[ 'itemName' ] = thisData.thisSection.sections[ itemIndex ].name;
