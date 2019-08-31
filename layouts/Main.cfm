@@ -36,6 +36,9 @@
       <li class="nav-item <cfif event.getCurrentHandler() eq 'resources'>active</cfif>">
         <a class="nav-link" href="#event.buildLink('resources.index')#">Resources</a>
       </li>
+      <li class="nav-item <cfif event.getCurrentHandler() eq 'contact'>contact</cfif>">
+        <a class="nav-link" href="#event.buildLink('contact.index')#">Contact</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/dfgrumpy/learncfinaweek" target="_blank">Github</a>
       </li>

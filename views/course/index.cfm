@@ -50,20 +50,55 @@
 		</div>
 
 		<div class="col-lg-8">
-			<div class="jumbotron">
+			<div class="jumbotron p-4 p-md-4 rounded shadow">
 				<h1>#prc.thisSection.name#</h1>
 				<cfif NOT prc.thisSection.name IS prc.thisSection.itemName>
 					<h2>#prc.thisSection.itemName#</h2>
 				</cfif>
-				<hr class="my-4">
-					<dl class="row">
-						<dt class="col-sm-4">Content Author:</dt>
-						<dd class="col-sm-8">#prc.thisSection.author#</dd>
-						<cfif prc.thisSection.Revised>
-							<dt class="col-sm-4">Reviewed/Revised By: </dt>
-							<dd class="col-sm-8">#prc.thisSection.reviewer#</dd>
-						</cfif>
-					</dl>
+			    <hr>
+				<div class="row mb-2 mt-4 ">
+			    	<div class="col-md-6 <cfif !prc.thisSection.Revised></cfif>">
+				      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				        <div class="col p-4 d-flex flex-column position-static">
+				          <strong class="d-inline-block mb-2 text-primary">Content Author</strong>
+				          <p class="card-text mb-auto">#prc.thisSection.author#</p>
+				          <p class="card-text mb-auto">
+				          	<cfif prc.thisSection.authorData.twitter.len()>
+					        <a href="https://www.twitter.com/#replace(prc.thisSection.authorData.twitter, "@", "")#" target="_blank">
+				          	<img src="/assets/img/Twitter_Social_Icon_Rounded_Square_Color.svg" width="20"> #replace(prc.thisSection.authorData.twitter, "@", "")#
+				          	</a>
+				          	<cfelse>&nbsp;
+				          	</cfif>
+				          </p>
+				        </div>
+				        <div class="col-auto d-none d-lg-block">				      	
+							<img src="/assets/contributors/#prc.thisSection.authorData.bioimage#" width="75">
+				        </div>
+				      </div>
+			    	</div>
+
+					<cfif prc.thisSection.Revised>
+			    	<div class="col-md-6">
+				      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				        <div class="col p-4 d-flex flex-column position-static">
+				          <strong class="d-inline-block mb-2 text-primary">Reviewed/Revised By</strong>
+				          <p class="card-text mb-auto">#prc.thisSection.reviewer#</p>
+				          <p class="card-text mb-auto">
+				          	<cfif prc.thisSection.reviewerData.twitter.len()>
+					        <a href="https://www.twitter.com/#replace(prc.thisSection.reviewerData.twitter, "@", "")#" target="_blank">
+				          	<img src="/assets/img/Twitter_Social_Icon_Rounded_Square_Color.svg" width="20"> #replace(prc.thisSection.reviewerData.twitter, "@", "")#
+				          	</a>
+				          	<cfelse>&nbsp;
+				          	</cfif>
+				          </p>
+				        </div>
+				        <div class="col-auto d-none d-lg-block">				      	
+							<img src="/assets/contributors/#prc.thisSection.reviewerData.bioimage#" width="75">
+				        </div>
+				      </div>
+			    	</div>
+		    	</cfif>
+		    	</div>
 			</div>
 			#prc.thisSection.content#
 		</div>

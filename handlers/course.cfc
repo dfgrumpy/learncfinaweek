@@ -25,6 +25,11 @@ component{
 		prc.thisSection = courseService.courseData(rc, 1);
 		prc.thisSection["authorData"] = contributorsService.getContributorById(prc.thisSection.authorid);
 
+		if (prc.thisSection.Revised) {
+			prc.thisSection["reviewerData"] = contributorsService.getContributorById(prc.thisSection.reviewerid);			
+		}
+
+
 	}
 
 
@@ -34,6 +39,12 @@ component{
 		prc.section = structKeyExists( rc, 'section' ) ? rc.section : 'Setup';
 		prc.item = structKeyExists( rc, 'section' ) && structKeyExists( rc, 'item' )
 			? rc.item : 'Installing_ColdFusion';
+
+		if (prc.item contains "hands_on") {
+			event.setView( "course/comingsoon" );
+
+		}
+
 
 	}
 
