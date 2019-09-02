@@ -44,7 +44,7 @@
         <h4 class="card-title pricing-card-title">
         	Best place to ask questions is the community backed google group
         </h4>
-        <a href="https://groups.google.com/forum/#!forum/learn-cf-in-a-week-v2" target="_blank" class="mt-auto btn btn-primary">View Google Group</a>
+        <a href="https://groups.google.com/d/forum/learn-cf-in-a-week-public" target="_blank" class="mt-auto btn btn-primary">View Google Group</a>
       </div>
     </div>
 
