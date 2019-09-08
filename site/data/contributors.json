@@ -15,7 +15,7 @@
             "author": "Matthew Clemente",
             "authorid": "17",
             "bio": "I'm a Founding Partner with Season 4, LLC, a team of designers, programmers, and writers working in the legal industry. After studying English, I took the road less traveled and one day realized, much to my surprise, that I had become a developer. I've been building with ColdFusion since MX 7, and the community has been amazing from the start.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Matthew_Clemente.jpg",
             "bioshort": "I'm a Founding Partner with Season 4, LLC, a team of designers, programmers, and writers working in the legal industry. After studying English, I took the road",
             "twitter": "@mjclemente84",
             "admin": false
@@ -35,7 +35,7 @@
             "author": "Masha Edelen",
             "authorid": "16",
             "bio": "Lifelong learner, versatile entrepreneur with a passion for technology, I have been leading Momenta, a digital creative agency, since the early days of web development into the modern era of digital experiences. Selecting ColdFusion as the technology of choice since Macromedia version 5.0, my team and I developed numerous web applications including custom CMS for a wide variety of clients. With the explosion of AI in the modern world, my interest expanded into Machine Learning. Having completed three nano-degrees from Udacity I am looking for ways to utilize ML in web applications. Since recently relocating to Charlotte, NC, I have been exploring the region and its opportunities, while building relationships in the local industry. In my free time, I enjoy traveling and look forward to visiting my daughter, freshman at UCLA, in Los Angeles.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Masha_Edelen.jpg",
             "bioshort": "Lifelong learner, versatile entrepreneur with a passion for technology, I have been leading Momenta, a digital creative agency, since the early days of web",
             "twitter": "@mashaedelen",
             "admin": false
@@ -55,7 +55,7 @@
             "author": "Nolan Erck",
             "authorid": "14",
             "bio": "Nolan Erck has been developing software professionally for more than 19 years, starting in the video game industry as a Tools Programmer advancing to web development in 1999. He has worked on high profile projects for LucasArts, Maxis, Lisa \"Left Eye\" Lopes, Schools Credit Union, and Alive N Kicking Magazine among others. His list of credits includes Grim Fandango, Star Wars: The Phantom Menace, SimPark, and SimSafari, as well as high-traffic websites for a variety of technology based companies.<br>Nolan currently co-manages the SacInteractive User Group and is an active member of the Web Developer community, giving presentations on Object-Oriented Programming and Web Development for groups across Northern California. Nolan is also certified in Adobe ColdFusion, and is an in-demand consultant, providing training and development experience for a variety of companies.<br>When he's not consulting or talking about himself in the third person, Nolan can usually be found working on one of several music projects.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Nolan_Erck.jpg",
             "bioshort": "Nolan Erck has been developing software professionally for more than 19 years, starting in the video game industry as a Tools Programmer advancing to web",
             "twitter": "@southofshasta",
             "admin": false
@@ -85,7 +85,7 @@
             "author": "Dan Fredricks",
             "authorid": "12",
             "bio": "A ColdFusion Developer for over 15 years specializing in Government Contracts. Continuing to learn more modern techniques all the time such as OOP, API development and more. In my spare time I spend time with my wife and 2 kids, coaching and playing sports with them, and watching a lot of sports.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Dan_Fredricks.png",
             "bioshort": "A ColdFusion Developer for over 15 years specializing in Government Contracts. Continuing to learn more modern techniques all the time such as OOP, API ",
             "twitter": "@fmdano74",
             "admin": true
@@ -105,7 +105,7 @@
             "author": "Pete Freitag",
             "authorid": "18",
             "bio": "Pete Freitag has over 20 years of experience building web applications with ColdFusion. In 2006 he started Foundeo Inc (foundeo.com), a ColdFusion consulting and products company. Pete helps clients develop and architect custom ColdFusion applications, as well as review an improve the performance and security of existing applications. He has also built several products and services for ColdFusion including Fixinator (https://fixinator.app/), a CFML code security scanner, a Web Application Firewall for ColdFusion called FuseGuard (https://fuseguard.com) and a ColdFusion server security scanning service called HackMyCF (https://hackmycf.com). Pete holds a BS in Software Engineering from Clarkson University.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Pete_Freitag.jpg",
             "bioshort": "Pete Freitag has over 20 years of experience building web applications with ColdFusion. In 2006 he started Foundeo Inc (foundeo.com), a ColdFusion consulting ",
             "twitter": "@pfreitag",
             "admin": false
@@ -115,7 +115,7 @@
             "author": "Matt Gifford",
             "authorid": "13",
             "bio": "Matt Gifford is owner and primary primate at his own development consultancy company, monkehWorks Ltd. His work primarily focuses on building mobile apps and ColdFusion development, although he's such a geek he enjoys writing in a variety of languages.<br />He's a published author and presents at conferences and user groups on a variety of topics. As an Adobe Community Professional and Adobe User Group manager, Matt is a keen proponent for community resources and sharing knowledge.<br />He is the author of \"Object-Oriented Programming in ColdFusion\" and \"PhoneGap Mobile Application Development Cookbook\" and also contributes articles and tutorials to international industry magazines.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Matt_Gifford.png",
             "bioshort": "Matt Gifford is owner and primary primate at his own development consultancy company, monkehWorks Ltd. His work primarily focuses on building mobile apps",
             "twitter": "@coldfumonkeh",
             "admin": false
@@ -155,7 +155,7 @@
             "author": "Denard Springle",
             "authorid": "15",
             "bio": "Denard 'Denny' Springle has worked extensively with ColdFusion since v4.5 and numerous additional languages including Perl, PHP and Java. Well known in the community for his insight on security and performance, Denard has spoken at numerous conferences and user groups for over a decade. Denard started and ran the Northern Virginia CFUG for five years before moving out of the area and passing the torch to the remaining organizers.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Denard_Springle.png",
             "bioshort": "Denard 'Denny' Springle has worked extensively with ColdFusion since v4.5 and numerous additional languages including Perl, PHP and Java. Well known in the community ",
             "twitter": "@ddspringle",
             "admin": false
@@ -195,7 +195,7 @@
             "author": "Carl Von Stetten",
             "authorid": "19",
             "bio": "Carl Von Stetten has served as a Geographic Information System (GIS) Technician and Analyst with Central San for 19 years. He has developed and maintained multiple internal ColdFusion-based GIS applications for use by District staff, and is well-versed in Microsoft SQL Server and Esri ArcGIS technologies. He can often be found hanging out in the ColdFusion Slack team, or on the Adobe ColdFusion forums.",
-            "bioimage": "headshot.jpeg",
+            "bioimage": "Carl_Von_Stetten.png",
             "bioshort": "Carl Von Stetten has served as a Geographic Information System (GIS) Technician and Analyst with Central San for 19 years. He has developed and maintained ",
             "twitter": "@cfvonner",
             "admin": true

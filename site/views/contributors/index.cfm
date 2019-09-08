@@ -29,6 +29,11 @@
 					<a href="##/" class="text-right" data-html="true" data-container="body" data-toggle="popover" data-placement="right" data-title="#author.author#">(more)</a>
 				</cfif>
 				</p>
+				<cfif author.twitter.len()>
+			        <a href="https://www.twitter.com/#replace(author.twitter, "@", "")#" target="_blank">
+		          	<img src="/assets/img/Twitter_Social_Icon_Rounded_Square_Color.svg" width="20"> #replace(author.twitter, "@", "")#
+		          	</a>
+	          	</cfif>
 			</div>
 		</div>
 	</div>

@@ -17,10 +17,13 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="##"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="##navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    
+
+
+    <a class="navbar-brand" href="##"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="##navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
@@ -33,9 +36,9 @@
       <li class="nav-item <cfif event.getCurrentHandler() eq 'contributors'>active</cfif>">
         <a class="nav-link" href="#event.buildLink('contributors.index')#">Contributors</a>
       </li>
-      <li class="nav-item <cfif event.getCurrentHandler() eq 'resources'>active</cfif>">
+      <!-- <li class="nav-item <cfif event.getCurrentHandler() eq 'resources'>active</cfif>">
         <a class="nav-link" href="#event.buildLink('resources.index')#">Resources</a>
-      </li>
+      </li> -->
       <li class="nav-item <cfif event.getCurrentHandler() eq 'contact'>contact</cfif>">
         <a class="nav-link" href="#event.buildLink('contact.index')#">Contact</a>
       </li>
@@ -52,6 +55,11 @@
       </li> --->
     </ul>
   </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+      <img src="/assets/img/logo_nav.png" height="30" class="d-inline-block align-top" alt="">
+      </li>
+    </ul>
 </nav>
 
 <div class="row" style="padding-top: 60px;"></div>
@@ -66,6 +74,10 @@
       	<p class="text-center">
       		Hosting provided by <a href="https://www.hostmedia.co.uk/" target="_new">Hostmedia</a>
       	</p>
+        <p class="text-center">
+          Built using <a href="https://adobe.com/ColdFusion" target="_new">Adobe ColdFusion 2018</a> and 
+          <a href="https://www.coldbox.org/" target="_new">ColdBox Framework</a>
+        </p>
 	  </div>
 
 </footer>

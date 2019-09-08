@@ -31,6 +31,10 @@
 							<div class="card-body">
 								<div class="list-group">
 									<cfloop array="#a.sections#" index="b">
+										<!-- hiding hands on section temporarily -->
+										<cfif b.name contains "hands on">
+											<cfcontinue />
+										</cfif>
 										<cfset thisItem.class = "list-group-item list-group-item-action">
 										<cfset thisItem.linkItem = rereplace( b.name, '[\?\s]', "_", "all")>
 										<cfset thisItem.linkURL = 'course.index.section.' & replace( a.name," ", "_", "all" )
