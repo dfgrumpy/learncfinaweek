@@ -61,17 +61,17 @@
     {
       "name": "Decision Making and Scopes",
       "author": "Nic Tunney",
-      "reviewer": "",
-      "authorid": "9",
-      "reviewerid": "",
+      "reviewer": "Carl Von Stetten",
+      "authorid": "20",
+      "reviewerid": "19",
       "sections": [
         {
           "name": "Decision Making",
-          "filename": ""
+          "filename": "03.1_Decision_Making.md"
         },
         {
           "name": "Scopes",
-          "filename": ""
+          "filename": "03.2_Scopes.md"
         },
         {
           "name": "Hands On 3",
@@ -95,7 +95,7 @@
       "name": "Looping",
       "author": "Nic Tunney",
       "reviewer": "",
-      "authorid": "9",
+      "authorid": "20",
       "reviewerid": "9",
       "sections": [
         {
