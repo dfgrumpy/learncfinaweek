@@ -1,5 +1,5 @@
 Install commandbox.docx
 learncfinaweek_1_1.zip
-/coldbox
-/testbox
-/modules
+coldbox/
+testbox/
+modules/

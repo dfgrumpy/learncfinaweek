@@ -23,11 +23,11 @@
         "route-visualizer":"^1.2.0+4"
     },
     "installPaths":{
-        "coldbox":"coldbox/",
-        "testbox":"testbox/",
-        "cbdebugger":"modules/cbdebugger/",
-        "cbmarkdown":"modules/cbmarkdown/",
-        "route-visualizer":"modules/route-visualizer/"
+        "coldbox":"site/coldbox/",
+        "testbox":"site/testbox/",
+        "cbdebugger":"site/modules/cbdebugger/",
+        "cbmarkdown":"site/modules/cbmarkdown/",
+        "route-visualizer":"site/modules/route-visualizer/"
     },
     "dependencies":{
         "coldbox":"^5.5.0+958",
