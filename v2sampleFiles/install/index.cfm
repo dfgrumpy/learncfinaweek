@@ -1,3 +1,6 @@
+<cflocation  url="insertDBdata.cfm">
+
+
 <cfparam name="form.submitted" default="0">
 <!DOCTYPE html>
 <html lang="en">

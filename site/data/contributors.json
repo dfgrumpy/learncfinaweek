@@ -1,0 +1,204 @@
+{
+    "authors": [
+        {
+            "alast": "Christiansen",
+            "author": "Emily Christiansen",
+            "authorid": "1",
+            "bio": "Emily Christiansen is a software engineer at American Public Media. She works on the Public Insight Network, a platform for newsrooms to engage their sources in a meaningful way. Emily loves learning new programming languages as well as teaching others. She began working with ColdFusion in 2009 and has been a frequent speaker at conferences ever since. Her main interests are code reuse and refactoring. In addition to programming, Emily also enjoys singing, reading, zumba, and video games.",
+            "bioimage": "emily_christiansen.jpg",
+            "bioshort": "Emily Christiansen is a software engineer at American Public Media. She works on the Public Insight Network, a platform for newsrooms to engage their",
+            "twitter": "",
+            "admin": false
+        },
+        {
+            "alast": "Clemente",
+            "author": "Matthew Clemente",
+            "authorid": "17",
+            "bio": "I'm a Founding Partner with Season 4, LLC, a team of designers, programmers, and writers working in the legal industry. After studying English, I took the road less traveled and one day realized, much to my surprise, that I had become a developer. I've been building with ColdFusion since MX 7, and the community has been amazing from the start.",
+            "bioimage": "Matthew_Clemente.jpg",
+            "bioshort": "I'm a Founding Partner with Season 4, LLC, a team of designers, programmers, and writers working in the legal industry. After studying English, I took the road",
+            "twitter": "@mjclemente84",
+            "admin": false
+        },
+        {
+            "alast": "Cunningham",
+            "author": "Tim Cunningham",
+            "authorid": "2",
+            "bio": "Tim Cunningham has been obsessed with programming since his dad bought a Kaypro IV to help run the family business in 1984. He started developing web applications in 1995 and developing ColdFusion applications since 1999. He serves as Vice-President of IDMI (Information Distribution and Marketing Incorporated) a group of ColdFusion centric companies aimed at the personal property insurance industry, credit card processing and print management. As Vice-President he strives to keep a forward vision toward new technology to improve customer service, improve employee skill sets and increase company profitability. Tim is proud to be an Adobe Community Professional and a member of the CodebassRadio.net team. He blogs at <a href=\"http://cfmumbojumbo.com\" target=\"_new\">http://cfmumbojumbo.com</a> and hosts community interviews on <a href=\"http://bolttalks.com\" target=\"_new\">http://bolttalks.com</a>",
+            "bioimage": "tim_cunningham.jpg",
+            "bioshort": "Tim Cunningham has been obsessed with programming since his dad bought a Kaypro IV to help run the family business in 1984. He started developing web",
+            "twitter": "@timcunningham71",
+            "admin": false
+        },
+        {
+            "alast": "Edelen",
+            "author": "Masha Edelen",
+            "authorid": "16",
+            "bio": "Lifelong learner, versatile entrepreneur with a passion for technology, I have been leading Momenta, a digital creative agency, since the early days of web development into the modern era of digital experiences. Selecting ColdFusion as the technology of choice since Macromedia version 5.0, my team and I developed numerous web applications including custom CMS for a wide variety of clients. With the explosion of AI in the modern world, my interest expanded into Machine Learning. Having completed three nano-degrees from Udacity I am looking for ways to utilize ML in web applications. Since recently relocating to Charlotte, NC, I have been exploring the region and its opportunities, while building relationships in the local industry. In my free time, I enjoy traveling and look forward to visiting my daughter, freshman at UCLA, in Los Angeles.",
+            "bioimage": "Masha_Edelen.jpg",
+            "bioshort": "Lifelong learner, versatile entrepreneur with a passion for technology, I have been leading Momenta, a digital creative agency, since the early days of web",
+            "twitter": "@mashaedelen",
+            "admin": false
+        },
+        {
+            "alast": "Epler",
+            "author": "David Epler",
+            "authorid": "3",
+            "bio": "David Epler is a Software Architect with AboutWeb in Rockville, MD. As a member of AboutWeb&#39;s solutions team, he has built, deployed, and maintained systems compliant with the most demanding regulations and mandates needed to pass security certification and accreditation for Federal Government clients. He has been developing with ColdFusion since version 4 and is an active member of the ColdFusion community. David has contributed to several open source ColdFusion projects and frameworks, along with the blog he maintains (<a href=\"http://www.dcepler.net\" target=\"_new\">www.dcepler.net</a>). He was responsible for creating and maintaining Unofficial Updater 2 which makes patching ColdFusion 8 and 9 significantly easier before the Hotfix installer was introduced in ColdFusion 10. David has been at speaker at various user groups and conferences like CFUnited, RIACon, and Adobe Government Technology Summit  He also helps run the Capital Area Cyber Security User Group in the DC Area.",
+            "bioimage": "david_epler.jpg",
+            "bioshort": "David Epler is a Software Architect with AboutWeb in Rockville, MD. As a member of AboutWeb's solutions team, he has built, deployed, and maintain",
+            "twitter": "@dcepler",
+            "admin": false
+        },
+        {
+            "alast": "Erck",
+            "author": "Nolan Erck",
+            "authorid": "14",
+            "bio": "Nolan Erck has been developing software professionally for more than 19 years, starting in the video game industry as a Tools Programmer advancing to web development in 1999. He has worked on high profile projects for LucasArts, Maxis, Lisa \"Left Eye\" Lopes, Schools Credit Union, and Alive N Kicking Magazine among others. His list of credits includes Grim Fandango, Star Wars: The Phantom Menace, SimPark, and SimSafari, as well as high-traffic websites for a variety of technology based companies.<br>Nolan currently co-manages the SacInteractive User Group and is an active member of the Web Developer community, giving presentations on Object-Oriented Programming and Web Development for groups across Northern California. Nolan is also certified in Adobe ColdFusion, and is an in-demand consultant, providing training and development experience for a variety of companies.<br>When he's not consulting or talking about himself in the third person, Nolan can usually be found working on one of several music projects.",
+            "bioimage": "Nolan_Erck.jpg",
+            "bioshort": "Nolan Erck has been developing software professionally for more than 19 years, starting in the video game industry as a Tools Programmer advancing to web",
+            "twitter": "@southofshasta",
+            "admin": false
+        },
+        {
+            "alast": "Farmer",
+            "author": "Sam Farmer",
+            "authorid": "4",
+            "bio": "Growing up I never imagined I would play bass guitar for the Dave Matthews Band. And indeed it never happened.<br /><br />But I have become a passionate and pretty good web developer. I have developed applications for 15 years mostly using ColdFusion, JavaScript, Oracle, SQLServer and MySQL. I am a happily married father of two daughters living in Washington, DC. Currently I am a Senior Applications Architect at <a href=\"https://www.firstcomp.com/firstcomp/\" target=\"_new\">FirstComp</a>.",
+            "bioimage": "sam_farmer.jpg",
+            "bioshort": "Growing up I never imagined I would play bass guitar for the Dave Matthews Band. And indeed it never happened.",
+            "twitter": "@sam_farmer",
+            "admin": false
+        },
+        {
+            "alast": "Ferguson",
+            "author": "Dave Ferguson",
+            "authorid": "5",
+            "bio": "Dave has been working in information technology for many, many, years. He has spent the majority of that time specializing in large enterprise-class web applications. Dave runs his own ColdFusion blog, <a href=\"http://blog.dkferguson.com\" target=\"_new\">http://blog.dkferguson.com</a> where he posts interesting things he comes across.  He is also the founder and co-host of the CFHour Podcast <a href=\"http://www.cfhour.com\" target=\"_new\">http://www.cfhour.com</a>.  The podcast, just like his blog, is mostly focused on ColdFusion but dabbles in to other technologies. Dave is also a member of the Adobe Community Professional group.",
+            "bioimage": "dave_ferguson.jpg",
+            "bioshort": "Dave has been working in information technology for many, many, years. He has spent the majority of that time specializing in large enterprise-class w",
+            "twitter": "@DFGrumpy",
+            "admin": true
+        },
+        {
+            "alast": "Fredricks",
+            "author": "Dan Fredricks",
+            "authorid": "12",
+            "bio": "A ColdFusion Developer for over 15 years specializing in Government Contracts. Continuing to learn more modern techniques all the time such as OOP, API development and more. In my spare time I spend time with my wife and 2 kids, coaching and playing sports with them, and watching a lot of sports.",
+            "bioimage": "Dan_Fredricks.png",
+            "bioshort": "A ColdFusion Developer for over 15 years specializing in Government Contracts. Continuing to learn more modern techniques all the time such as OOP, API ",
+            "twitter": "@fmdano74",
+            "admin": true
+        },
+        {
+            "alast": "Free",
+            "author": "Simon Free",
+            "authorid": "6",
+            "bio": "Simon Free has extensive experience in the online space. As an ACP, an ACI, and application developer for ten24, Simon has proven his skills in both the educational and development arenas. Constantly learning and sharing his knowledge, Simon is a trusted name in the conference community. His education is evident in his ability to produce high profile projects ranging from elaborate ecommerce applications to editorial CMS platforms for increasing the workflow within the publishing industry. Simon's technology background includes development in ColdFusion, jQuery, Flex, and AIR. ",
+            "bioimage": "simon_free.jpg",
+            "bioshort": "Simon Free has extensive experience in the online space. As an ACP, an ACI, and application developer for ten24, Simon has proven his skills in both t",
+            "twitter": "@simonfree",
+            "admin": false
+        },
+        {
+            "alast": "Freitag",
+            "author": "Pete Freitag",
+            "authorid": "18",
+            "bio": "Pete Freitag has over 20 years of experience building web applications with ColdFusion. In 2006 he started Foundeo Inc (foundeo.com), a ColdFusion consulting and products company. Pete helps clients develop and architect custom ColdFusion applications, as well as review an improve the performance and security of existing applications. He has also built several products and services for ColdFusion including Fixinator (https://fixinator.app/), a CFML code security scanner, a Web Application Firewall for ColdFusion called FuseGuard (https://fuseguard.com) and a ColdFusion server security scanning service called HackMyCF (https://hackmycf.com). Pete holds a BS in Software Engineering from Clarkson University.",
+            "bioimage": "Pete_Freitag.jpg",
+            "bioshort": "Pete Freitag has over 20 years of experience building web applications with ColdFusion. In 2006 he started Foundeo Inc (foundeo.com), a ColdFusion consulting ",
+            "twitter": "@pfreitag",
+            "admin": false
+        },
+        {
+            "alast": "Gifford",
+            "author": "Matt Gifford",
+            "authorid": "13",
+            "bio": "Matt Gifford is owner and primary primate at his own development consultancy company, monkehWorks Ltd. His work primarily focuses on building mobile apps and ColdFusion development, although he's such a geek he enjoys writing in a variety of languages.<br />He's a published author and presents at conferences and user groups on a variety of topics. As an Adobe Community Professional and Adobe User Group manager, Matt is a keen proponent for community resources and sharing knowledge.<br />He is the author of \"Object-Oriented Programming in ColdFusion\" and \"PhoneGap Mobile Application Development Cookbook\" and also contributes articles and tutorials to international industry magazines.",
+            "bioimage": "Matt_Gifford.png",
+            "bioshort": "Matt Gifford is owner and primary primate at his own development consultancy company, monkehWorks Ltd. His work primarily focuses on building mobile apps",
+            "twitter": "@coldfumonkeh",
+            "admin": false
+        },
+        {
+            "alast": "Hastings",
+            "author": "Paul Hastings",
+            "authorid": "7",
+            "bio": "Paul Hastings, who after over 25 years of IT work is now a completely fossilized geologist, is CTO at Sustainable GIS, a consulting firm specializing in Geographic Information Systems (GIS), Flex, and ColdFusion applications for the natural resource market, and of course ColdFusion globalization. Paul is based in Bangkok, Thailand, but says that it's not nearly as exciting as it sounds but sometimes can be. He can be reached at paul@sustainableGIS.com",
+            "bioimage": "paul_hastings.jpg",
+            "bioshort": "Paul Hastings, who after over 25 years of IT work is now a completely fossilized geologist, is CTO at Sustainable GIS, a consulting firm specializing",
+            "twitter": "",
+            "admin": false
+        },
+        {
+            "alast": "Nieuwenhuis",
+            "author": "Guust Nieuwenhuis",
+            "authorid": "8",
+            "bio": "Guust Nieuwenhuis is a Senior Analyst Developer specialised in web technologies. With his own company, <a href=\"http://www.orangelark.be\" target=\"_blank\">Orange Lark</a>, he delivers web solutions (sites, applications and consultancy) to various (inter)national clients.<br /><br />Within the ColdFusion community Guust is a very active member. He speaks at conferences (<a href=\"http://www.cfcamp.org/\" target=\"_new\">CFCamp 2012</a>, <a href=\"http://www.muracon.com/\" target=\"_new\">MuraCon 2012</a>, <a href=\"http://www.coldfusioneurope.eu/\" target=\"_new\">Scotch on the Road 2012</a>, BarCamp Antwerp) and usergroups (<a href=\"http://www.cfug.be/\" target=\"_new\">ColdFusion UserGroup Belgium</a>, <a href=\"http://www.cfug.nl/\" target=\"_new\">Dutch ColdFusion UserGroup</a>, <a href=\"http://www.coldfusionmeetup.com/\" target=\"_new\">CFMeetup</a>, <a href=\"http://getmura.com/support/mura-show/\" target=\"_new\">The Mura Show</a>), organises conferences (<a href=\"http://www.sotr.eu/\" target=\"_new\">Scotch on the Rocks</a>) and usergroup meetings (<a href=\"http://www.cfug.be/\" target=\"_new\">ColdFusion UserGroup Belgium</a>) and shares his opinions, discoveries, experiences on his <a href=\"http://www.lagaffe.be/\" target=\"_new\">blog</a> and <a href=\"http://www.twitter.com/lagaffe\" target=\"_new\">Twitter</a>. As a recognition of all this, Guust has been invited by Adobe to join there Adobe Community Professional program in 2011.<br /><br />In his free time, he plays the double bass and drums both in bands as in symphony orchestra's and likes meeting friends for a chat, game or drink. When he still has some time left, he mainly spends it behind his computer to fulfil his hunger for the latest trends in IT.",
+            "bioimage": "guust_nieuwenhuis.jpg",
+            "bioshort": "Guust Nieuwenhuis is a Senior Analyst Developer specialised in web technologies. With his own company, Orange Lark, he delivers web solutions",
+            "twitter": "@Lagaffe",
+            "admin": false
+        },
+        {
+            "alast": "Skaggs",
+            "author": "Dan Skaggs",
+            "authorid": "9",
+            "bio": "Dan Skaggs has been coding in one form or another since the mid-1980s. A web developer since 1998, Dan has been developing ColdFusion applications since 2000 and has spoken at several ColdFusion conferences. Dan is the co-founder of Web-Meister Designs, a web development consulting firm he and his wife started in 1999 and is a contributing partner to the Model-Glue MVC framework for ColdFusion. Dan also enjoys shooting, motorcycling, and amateur radio.",
+            "bioimage": "dan_skaggs.jpg",
+            "bioshort": "Dan Skaggs has been coding in one form or another since the mid-1980s. A web developer since 1998, Dan has been developing ColdFusion applications",
+            "twitter": "@dskaggs",
+            "admin": false
+        },
+        {
+            "alast": "Springle",
+            "author": "Denard Springle",
+            "authorid": "15",
+            "bio": "Denard 'Denny' Springle has worked extensively with ColdFusion since v4.5 and numerous additional languages including Perl, PHP and Java. Well known in the community for his insight on security and performance, Denard has spoken at numerous conferences and user groups for over a decade. Denard started and ran the Northern Virginia CFUG for five years before moving out of the area and passing the torch to the remaining organizers.",
+            "bioimage": "Denard_Springle.png",
+            "bioshort": "Denard 'Denny' Springle has worked extensively with ColdFusion since v4.5 and numerous additional languages including Perl, PHP and Java. Well known in the community ",
+            "twitter": "@ddspringle",
+            "admin": false
+        },
+        {
+            "alast": "Tuttle",
+            "author": "Adam Tuttle",
+            "authorid": "10",
+            "bio": "Adam Tuttle has been developing web applications since the year 2000, starting with ColdFusion 4.5. In that time he has worked for manufacturing companies, in academia, and as a consultant; but ColdFusion was a constant. When it comes to work-focus Adam is a jack of all trades, but he especially enjoys in REST, SOA, Security, and Mobile-optimized design.<br /><br />In addition to working with and speaking about ColdFusion, he is also the Co-manager of the Philadelphia ColdFusion User Group, an Adobe Community Professional for ColdFusion, and maintains a growing library of open source projects, including Taffy. In addition to his own projects, he also contributes to the Mango Blog core, and runs CFCommunity, the GitHub organization working on filling in the gaps in CFScript for CF9+.<br /><br />Adam and his wife have two sons and together they enjoy gaming, camping, hiking, fishing, snowboarding, and cheering for the Phillies and the Eagles.",
+            "bioimage": "adam_tuttle.jpg",
+            "bioshort": "Adam Tuttle has been developing web applications since the year 2000, starting with ColdFusion 4.5. In that time he has worked for manufacturing",
+            "twitter": "@AdamTuttle",
+            "admin": false
+        },
+        {
+            "alast": "Wilson",
+            "author": "Dan Wilson",
+            "authorid": "11",
+            "bio": "As principal partner of <a href=\"http://www.datacurl.com/\" target=\"_new\">DataCurl LLC</a>, Dan Wilson runs both the consulting practice and <a href=\"http://challengewave.com/\" target=\"_new\">ChallengeWave.com</a>, a way to help employees start and stick with healthier lifestyles.<br /><br />Before launching DataCurl, Dan held numerous senior program and development positions in such industries as Technical Consulting, Health Care, Online Publishing and Government Contracting.<br /><br />Dan is an avid participant in technology communities; an <a href=\"http://lizfrederick.blogspot.com/2010/01/new-acps-for-2010.html\" target=\"_new\">Adobe Community Professional</a>, manager of the <a href=\"http://tacfug.org/\" target=\"_new\">Triangle ColdFusion User Group in Research Triangle Park, North Carolina</a>, Managing Director of the popular <a href=\"Model-Glue framework\" target=\"_new\">Model-Glue framework</a> and contributor to numerous open source projects based on ColdFusion, Flex and AIR platforms.<br /><br />Dan presents on <a href=\"http://nodans.com/page.cfm/page.cfm/2008-Speaking-Engagements\" target=\"_new\">ColdFusion, Flex and Rapid Development Techniques</a> at popular conferences around the world. You can find his thoughts on ColdFusion, Flex, AIR and other technology matters at <a href=\"http://www.nodans.com/\" target=\"_new\">http://www.nodans.com</a> and some occasional ramblings on food at <a href=\"http://blog.chefdanwilson.com/\" target=\"_new\">http://blog.chefdanwilson.com</a>.When not in front of a computer, you can find him biking, hiking, surfing, playing volleyball and helping small businesses improve their sales and marketing.",
+            "bioimage": "dan_wilson.jpg",
+            "bioshort": "As principal partner of DataCurl LLC, Dan Wilson runs both the consulting practice",
+            "twitter": "@DanWilson",
+            "admin": false
+        },
+        {
+            "alast": "nic_tunney",
+            "author": "Nic Tunney",
+            "authorid": "20",
+            "bio": "Nic has been working on web applications since the late 90&#39;s spending most of his life using the Adobe product stack. He&#39;s been everything from a tech instructor to a web developer to VP of Software Architecture and Director. This experience gives him a unique perspective on everything from full stack application architecture to project and product management. Nic loves the opportunity to learn something new and solve problems using best of breed technologies, whatever that may be.",
+            "bioimage": "nic_tunney.jpg",
+            "bioshort": "Nic has been working on web applications since the late 90&#39;s spending most of his life using the Adobe product stack. He&#39;s been everything ",
+            "twitter": "@ntunney",
+            "admin": false
+        },
+        {
+            "alast": "von_stetten",
+            "author": "Carl Von Stetten",
+            "authorid": "19",
+            "bio": "Carl Von Stetten has served as a Geographic Information System (GIS) Technician and Analyst with Central San for 19 years. He has developed and maintained multiple internal ColdFusion-based GIS applications for use by District staff, and is well-versed in Microsoft SQL Server and Esri ArcGIS technologies. He can often be found hanging out in the ColdFusion Slack team, or on the Adobe ColdFusion forums.",
+            "bioimage": "Carl_Von_Stetten.png",
+            "bioshort": "Carl Von Stetten has served as a Geographic Information System (GIS) Technician and Analyst with Central San for 19 years. He has developed and maintained ",
+            "twitter": "@cfvonner",
+            "admin": true
+        }
+    ]
+}

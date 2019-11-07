@@ -1,0 +1,447 @@
+{
+  "menu": [
+    {
+      "name": "Setup",
+      "author": "Simon Free",
+      "authorid": "6",
+      "reviewer": "Dan Fredricks",
+      "reviewerid": "12",
+      "sections": [
+        {
+          "name": "Installing ColdFusion",
+          "filename": "01.1_Installing_ColdFusion.md"
+        },
+        {
+          "name": "Installing the Database",
+          "filename": "01.2_Installing_DB.md"
+        },
+        {
+          "name": "Installing Sample Files",
+          "filename": "01.3_Installing_Sample_Files.md"
+        }
+      ]
+    },
+    {
+      "name": "Basics",
+      "author": "Dan Wilson",
+      "reviewer": "Dan Wilson",
+      "authorid": "11",
+      "reviewerid": "11",
+      "sections": [
+        {
+          "name": "What is ColdFusion?",
+          "filename": "02.1_What_is_ColdFusion.md"
+        },
+        {
+          "name": "Setting Variables",
+          "filename": "02.2_Setting_Variables.md"
+        },
+        {
+          "name": "Datatypes",
+          "filename": "02.3_Datatypes.md"
+        },
+        {
+          "name": "Commenting",
+          "filename": "02.4_Commenting.md"
+        },
+        {
+          "name": "Script vs Tag",
+          "filename": "02.5_Script_vs_Tag.md"
+        },
+        {
+          "name": "Hands On 1",
+          "filename": "HandsOn_01.md"
+        },
+        {
+          "name": "Hands On 2",
+          "filename": "HandsOn_02.md"
+        }
+      ]
+    },
+    {
+      "name": "Decision Making and Scopes",
+      "author": "Nic Tunney",
+      "reviewer": "Carl Von Stetten",
+      "authorid": "20",
+      "reviewerid": "19",
+      "sections": [
+        {
+          "name": "Decision Making",
+          "filename": "03.1_Decision_Making.md"
+        },
+        {
+          "name": "Scopes",
+          "filename": "03.2_Scopes.md"
+        },
+        {
+          "name": "Hands On 3",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 4",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 5",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 6",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Looping",
+      "author": "Nic Tunney",
+      "reviewer": "",
+      "authorid": "20",
+      "reviewerid": "9",
+      "sections": [
+        {
+          "name": "Looping",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 7",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 8",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Handling",
+      "author": "Dave Ferguson",
+      "reviewer": "Dave Ferguson",
+      "authorid": "5",
+      "reviewerid": "5",
+      "sections": [
+        {
+          "name": "Databases",
+          "filename": "05.1_Databases.md"
+        },
+        {
+          "name": "XML",
+          "filename": "05.3_XML.md"
+        },
+        {
+          "name": "JSON",
+          "filename": "05.2_JSON.md"
+        },
+        {
+          "name": "Hands On 9",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 10",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 11",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Code Reuse",
+      "author": "Emily Christiansen",
+      "reviewer": "Matt Gifford",
+      "authorid": "1",
+      "reviewerid": "13",
+      "sections": [
+        {
+          "name": "Functions",
+          "filename": "06.1_Functions.md"
+        },
+        {
+          "name": "Includes",
+          "filename": "06.2_Includes.md"
+        },
+        {
+          "name": "Custom Tags",
+          "filename": "06.3_Custom_Tags.md"
+        },
+        {
+          "name": "Components",
+          "filename": "06.4_Components.md"
+        },
+        {
+          "name": "Hands On 12",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 13",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 14",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 15",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Application cfc",
+      "author": "Adam Tuttle",
+      "reviewer": "Nolan Erck",
+      "authorid": "10",
+      "reviewerid": "14",
+      "sections": [
+        {
+          "name": "Application cfc",
+          "filename": "07.1_Applicationcfc.md"
+        },
+        {
+          "name": "Hands On 16",
+          "filename": "HandsOn_16.md"
+        }
+      ]
+    },
+    {
+      "name": "OOP",
+      "author": "Adam Tuttle",
+      "reviewer": "Denard Springle",
+      "authorid": "10",
+      "reviewerid": "15",
+      "sections": [
+        {
+          "name": "OOP",
+          "filename": "08.1_OOP.md"
+        },
+        {
+          "name": "Hands On 17",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "ORM",
+      "author": "Sam Farmer",
+      "reviewer": "Masha Edelen",
+      "authorid": "4",
+      "reviewerid": "16",
+      "sections": [
+        {
+          "name": "Intro to ORM",
+          "filename": "09.1_Intro_to_ORM.md"
+        },
+        {
+          "name": "Hands On 18",
+          "filename": "HandsOn_18.md"
+        },
+        {
+          "name": "Hands On 19",
+          "filename": "HandsOn_19.md"
+        },
+        {
+          "name": "Hands On 20",
+          "filename": "HandsOn_20.md"
+        },
+        {
+          "name": "Hands On 21",
+          "filename": "HandsOn_21.md"
+        }
+      ]
+    },
+    {
+      "name": "Mail",
+      "author": "Guust Nieuwenhuis",
+      "reviewer": "Guust Nieuwenhuis",
+      "authorid": "8",
+      "reviewerid": "8",
+      "sections": [
+        {
+          "name": "Mail",
+          "filename": "10.1_Mail.md"
+        },
+        {
+          "name": "Hands On 22",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Document Handling",
+      "author": "Tim Cunningham",
+      "reviewer": "Tim Cunningham",
+      "authorid": "2",
+      "reviewerid": "2",
+      "sections": [
+        {
+          "name": "cfhttp",
+          "filename": "11.1_cfhttp.md"
+        },
+        {
+          "name": "cfdocument",
+          "filename": "11.2_cfdocument.md"
+        },
+        {
+          "name": "cfpdf",
+          "filename": "11.3_cfpdf.md"
+        },
+        {
+          "name": "cfpdfform",
+          "filename": "11.4_cfpdfform.md"
+        },
+        {
+          "name": "File Manipulation",
+          "filename": "11.5_File_Manipulation.md"
+        },
+        {
+          "name": "Image Manipulation",
+          "filename": "11.6_Image_Manipulation.md"
+        },
+        {
+          "name": "Spreadsheets",
+          "filename": "11.7_Spreadsheets.md"
+        },
+        {
+          "name": "Hands On 23",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 24",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 25",
+          "filename": ""
+        },
+        {
+          "name": "Hands On 26",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Caching",
+      "author": "Dan Skaggs",
+      "reviewer": "Matthew Clemente",
+      "authorid": "9",
+      "reviewerid": "17",
+      "sections": [
+        {
+          "name": "Caching",
+          "filename": "12.1_Caching.md"
+        },
+        {
+          "name": "Advanced Caching",
+          "filename": "12.2_Advanced_Caching.md"
+        },
+        {
+          "name": "Hands On 27",
+          "filename": ""
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "author": "David Epler",
+      "reviewer": "Pete Freitag",
+      "authorid": "3",
+      "reviewerid": "18",
+      "sections": [
+        {
+          "name": "Introduction",
+          "filename": "13.1_Intro_to_Security.md"
+        },
+        {
+          "name": "Injection",
+          "filename": "13.2_Injection.md"
+        },
+        {
+          "name": "Cross-Site Scripting (XSS)",
+          "filename": "13.3_CrossSite_Scripting_XSS.md"
+        },
+        {
+          "name": "Cross-Site Request Forgery (CSRF)",
+          "filename": "13.4_CrossSite_Request_Forgery_CSRF.md"
+        },
+        {
+          "name": "Session Identifier Protection",
+          "filename": "13.5_Session_Identifier_Protection.md"
+        },
+        {
+          "name": "File Uploads",
+          "filename": "13.6_File_Uploads.md"
+        },
+        {
+          "name": "Secure Password Storage",
+          "filename": "13.7_Secure_Password_Storage.md"
+        },
+        {
+          "name": "ColdFusion Configuration",
+          "filename": "13.8_ColdFusion_Configuration.md"
+        },
+        {
+          "name": "Hands On 28",
+          "filename": "HandsOn_28.md"
+        },
+        {
+          "name": "Hands On 29",
+          "filename": "HandsOn_29.md"
+        }
+      ]
+    },
+    {
+      "name": "Error Handling and Debugging",
+      "author": "Simon Free",
+      "reviewer": "Dan Fredricks",
+      "authorid": "6",
+      "reviewerid": "12",
+      "sections": [
+        {
+          "name": "Error Handling",
+          "filename": "14.1_Error_Handling.md"
+        },
+        {
+          "name": "Debugging",
+          "filename": "14.2_Debugging.md"
+        },
+        {
+          "name": "Hands On 30",
+          "filename": "HandsOn_30.md"
+        },
+        {
+          "name": "Hands On 31",
+          "filename": "HandsOn_31.md"
+        }
+      ]
+    },
+    {
+      "name": "i18n",
+      "author": "Paul Hastings",
+      "reviewer": "Paul Hastings",
+      "authorid": "7",
+      "reviewerid": "7",
+      "sections": [
+        {
+          "name": "i18n",
+          "filename": "15.1_i18n.md"
+        },
+        {
+          "name": "Hands On 32",
+          "filename": "HandsOn_32.md"
+        }
+      ]
+    },
+    {
+      "name": "Conclusion",
+      "author": "Simon Free",
+      "authorid": "6",
+      "reviewer": "",
+      "sections": [
+        {
+          "name": "What to do Next",
+          "filename": ""
+        }
+      ]
+    }
+  ]
+}
